@@ -6,7 +6,7 @@
         - [Infinite while Loop](#infinite-while-loop)
     - [do while loop](#do-while-loop)
         - [Infinite do while loop](#infinite-do-while-loop)
-    -[for vs while loop](#for-vs-while-loop)    
+    - [for vs while loop](#for-vs-while-loop)    
 
 # Loops
 
