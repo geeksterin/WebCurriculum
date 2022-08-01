@@ -4,6 +4,7 @@
     - [What JavaScript in browser can do](#What-JavaScript-in-browser-can-do)
     - [What JavaScript cannot do in browser](#What-JavaScript-cannot-do-in-browser)
     - [Why is JavaScript unique from other programming language](#Why-is-JavaScript-unique-from-other-programming-language)
+- [Installation](#installation)
 - [JavaScript console.log()](#JavaScript-console-.log())
     - [console.log() Syntax](#console-.log()-Syntax)
     - [Print a sentence](#Print-a-sentence)
