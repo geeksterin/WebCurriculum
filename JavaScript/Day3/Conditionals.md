@@ -94,24 +94,6 @@ if (num > 0) {
 //  -3 is a negative number
 ```
 
-```js
-let isRaining = true
-if (isRaining) {
-  console.log('You need a rain coat.')
-} else {
-  console.log('No need for a rain coat.')
-}
-// You need a rain coat.
-
-isRaining = false
-if (isRaining) {
-  console.log('You need a rain coat.')
-} else {
-  console.log('No need for a rain coat.')
-}
-// No need for a rain coat.
-```
-
 The last condition is false, therefore the else block was executed. What if we have more than two conditions? In that case,  we would use *else if* conditions.
 
 ## If  Else if Else
@@ -142,20 +124,6 @@ if (a > 0) {
   console.log(`${a} is zero`)
 } else {
   console.log(`${a} is not a number`)
-}
-```
-
-```js
-// if else if else
-let weather = 'sunny'
-if (weather === 'rainy') {
-  console.log('You need a rain coat.')
-} else if (weather === 'cloudy') {
-  console.log('It might be cold, you need a jacket.')
-} else if (weather === 'sunny') {
-  console.log('Go out freely.')
-} else {
-  console.log('No need for rain coat.')
 }
 ```
 
