@@ -163,6 +163,7 @@ switch (weather) {
   default:
     console.log(' No need for rain coat.')
 }
+```
 // Examples to use conditions in the cases
 
 ```js
