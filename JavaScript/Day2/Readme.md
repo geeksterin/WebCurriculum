@@ -1,16 +1,16 @@
 - [Data Types](#data-types)
 	- [Primitive Data Types](#primitive-data-types)
 	- [Non-Primitive Data Types](#non-primitive-data-types)
-- [Number](#Number)
-- [String](#String)
-- [Boolean](#Boolean)
-    - [Truthy values](#Truthy-values)
-    - [Falsy values](#Falsy-values)
+- [Number](#number)
+- [String](#string)
+- [Boolean](#boolean)
+    - [Truthy values](#truthy-values)
+    - [Falsy values](#falsy-values)
 - [Undefined](#undefined)
 - [Null](#null)
-- [Symbol](#Symbol)
-- [What is an Operator?](#What-is-an-Operator?)
-- [Type of Operators](#Type-of-Operators)
+- [Symbol](#symbol)
+- [What is an Operator?](#what-is-an-operator)
+- [Type of Operators](#type-of-operators)
     - [Assignment Operators](#assignment-operators)
     - [Arithmetic Operators](#arithmetic-operators)
     - [Comparison Operators](#comparison-operators)
@@ -18,6 +18,7 @@
     - [Bitwise Operators](#bitwise-operators)
     - [String Operators](#string-operators)
     - [Other Operators](#other-operators)
+- [Excercise](#excercise)
 
 # Data Types
 
@@ -478,3 +479,15 @@ JavaScript tutorial
 |`typeof`|returns a string indicating the data type	|`typeof 3; // "number"`|
 |`in`|returns true if the specified property is in the object|`prop in object`|
 |`instanceof`|returns true if the specified object is of of the specified object type|`object instanceof object_type`|
+
+# Excercise
+1. [Add Two Numbers with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/add-two-numbers-with-javascript)
+2. [Subtract One Number from Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/subtract-one-number-from-another-with-javascript)
+3. [Multiply Two Numbers with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/multiply-two-numbers-with-javascript)
+4. [Divide One Number by Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/divide-one-number-by-another-with-javascript)
+5. [Increment a Number with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/increment-a-number-with-javascript)
+6. [Decrement a Number with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/decrement-a-number-with-javascript)
+7. [Create Decimal Numbers with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/create-decimal-numbers-with-javascript)
+8. [Multiply Two Decimals with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/multiply-two-decimals-with-javascript)
+9. [Divide One Decimal by Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/divide-one-decimal-by-another-with-javascript)
+10. [Finding a Remainder in JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/finding-a-remainder-in-javascript)
