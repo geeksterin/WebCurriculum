@@ -70,7 +70,7 @@ I believe you have the motivation and a strong desire to be a developer, a compu
 
 You may not need Node.js right now but you may need it for later. Install [node.js](https://nodejs.org/en/).
 
-![Node download](images/download_node.png)
+![Node download](./images/download_node.png)
 
 After downloading click next, next and install
 
