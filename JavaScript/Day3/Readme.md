@@ -4,16 +4,7 @@
 	- [If  Else if Else](#if--else-if-else)
 	- [Switch](#switch)
 	- [Ternary Operators](#ternary-operators)
-- [Loops](#loops)
-    - [for loop](#for-loop)
-        - [Infinte for loop](#infinite-for-loop)
-    - [while Loop](#while-loop)
-        - [Infinite while Loop](#infinite-while-loop)
-    - [do while loop](#do-while-loop)
-        - [Infinite do while loop](#infinite-do-while-loop)
-    - [for vs while loop](#for-vs-while-loop)
-  - [break](#break)
-  - [continue](#continue)
+- [Excercise](#exercise)
 
 # Conditionals
 
@@ -194,196 +185,49 @@ isRaining
   : console.log('No need for a rain coat.')
 ```
 
-# Loops
+# Exercise
 
-In programming, loops are used to repeat a block of code.
+1. [Use Conditional Logic with If Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-conditional-logic-with-if-statements)
 
-For example, if you want to show a message 100 times, then you can use a loop. It's just a simple example; you can achieve much more with loops.
+2. [Comparison with the Equality Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-equality-operator)
 
-## for loop
+3. [Comparison with the Strict Equality Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-equality-operator)
 
-The syntax of the for loop is:
+4. [Practice comparing different values](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/practice-comparing-different-values)
 
-```js
-for (initialExpression; condition; updateExpression) {
-    // for loop body
-}
-```
+5. [Comparison with the Inequality Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-inequality-operator)
 
-Here
+6. [Comparison with the Strict Inequality Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-inequality-operator)
 
-1. The initialExpression initializes and/or declares variables and executes only once.
-2. The condition is evaluated.
-    1. If the condition is false, the for loop is terminated.
-    2. If the condition is true, the block of code inside of the for loop is executed.
-3. The updateExpression updates the value of initialExpression when the condition is true.
-4. The condition is evaluated again. This process continues until the condition is false.
+7. [Comparison with the Greater Than Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-greater-than-operator)
 
-**Example**
+8. [Comparison with the Greater Than Or Equal To Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-greater-than-or-equal-to-operator)
 
-Display a Text Five Times
+9. [Comparison with the Less Than Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-less-than-operator)
 
-```js
-// program to display text 5 times
-const n = 5;
+10. [Comparison with the Less Than Or Equal To Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-less-than-or-equal-to-operator)
 
-// looping from i = 1 to 5
-for (let i = 1; i <= n; i++) {
-    console.log(`I love JavaScript.`);
-}
-```
+11. [Comparisons with the Logical And Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparisons-with-the-logical-and-operator)
 
-**Output**
+12. [Comparisons with the Logical Or Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparisons-with-the-logical-or-operator)
 
-```
-I love JavaScript.
-I love JavaScript.
-I love JavaScript.
-I love JavaScript.
-I love JavaScript.
-```
+13. [Introducing Else Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/introducing-else-statements)
 
-### Infinite for loop
+14. [Introducing Else If Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/introducing-else-if-statements)
 
-If the test condition in a for loop is always true, it runs forever (until memory is full).
+15. [Logical Order in If Else Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/logical-order-in-if-else-statements)
 
-```js
-// infinite for loop
-for(let i = 1; i > 0; i++) {
-    // block of code
-}
-```
+16. [Chaining If Else Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/chaining-if-else-statements)
 
-## while Loop
+17. [Selecting from Many Options with Switch Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/selecting-from-many-options-with-switch-statements)
 
-The syntax of the while loop is:
+18. [Adding a Default Option in Switch Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/adding-a-default-option-in-switch-statements)
 
-```js
-while (condition) {
-    // body of loop
-}
-```
+19. [Multiple Identical Options in Switch Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/multiple-identical-options-in-switch-statements)
 
-Here ,
-
-1. A while loop evaluates the condition inside the parenthesis ().
-2. If the condition evaluates to true, the code inside the while loop is executed.
-3. The condition is evaluated again.
-4. This process continues until the condition is false.
-5. When the condition evaluates to false, the loop stops.
-
-**Example**
-
-Display Numbers from 1 to 5
-
-```js
-// program to display numbers from 1 to 5
-// initialize the variable
-let i = 1, n = 5;
-
-// while loop from i = 1 to 5
-while (i <= n) {
-    console.log(i);
-    i += 1;
-}
-```
-
-**Output**
-```
-1
-2
-3
-4
-5
-```
-
-### Infinite while Loop
-
-If the condition of a loop is always true, the loop runs for infinite times (until the memory is full).
-
-```js
-// infinite while loop
-while(true){
-    // body of loop
-}
-```
-
-## do while loop
-
-The syntax of do...while loop is:
-
-```js
-do {
-    // body of loop
-} while(condition)
-```
-
-Here, 
-1. The body of the loop is executed at first. Then the condition is evaluated.
-2. If the condition evaluates to true, the body of the loop inside the do statement is executed again.
-3. The condition is evaluated once again.
-4. If the condition evaluates to true, the body of the loop inside the do statement is executed again.
-5. This process continues until the condition evaluates to false. Then the loop stops.
-
-**Note:** do-while loop is similar to the while loop. The only difference is that in do…while loop, the body of loop is executed at least once.
+20. [Replacing If Else Chains with Switch](freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/replacing-if-else-chains-with-switch)
 
 
-### Infinite do while Loop
 
-```js
-// infinite do...while loop
-const count = 1;
-do {
-   // body of loop
-} while(count == 1)
-```
 
-## for Vs while Loop
 
-A for loop is usually used when the number of iterations is known. For example,
-
-```js
-// this loop is iterated 5 times
-for (let i = 1; i <=5; ++i) {
-   // body of loop
-}
-```
-And while and do...while loops are usually used when the number of iterations are unknown. For example,
-
-```js
-while (condition) {
-    // body of loop
-}
-```
-
-## break
-
-Break is used to interrupt a loop.
-
-```js
-for(let i = 0; i <= 5; i++){
-  if(i == 3){
-    break
-  }
-  console.log(i)
-}
-
-// 0 1 2
-```
-
-The above code stops if 3 found in the iteration process.
-
-## continue
-
-We use the keyword *continue* to skip a certain iterations. 
-
-```js
-for(let i = 0; i <= 5; i++){
-  if(i == 3){
-    continue
-  }
-  console.log(i)
-}
-
-// 0 1 2 4 5
-```
