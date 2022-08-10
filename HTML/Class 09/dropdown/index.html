@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            padding:0px;
+            margin: 0px;
+        }
+
+        ul > li {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        ul {
+            background-color: lightgreen;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul > li:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown-menu {
+            display: flex;
+            justify-content:space-around;
+            background-color: lightblue;
+            padding: 3rem;
+            display:none;
+        }
+
+        .dropdown-menu > * >  li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Products</li>
+        </ul>
+
+        <div class="dropdown-menu">
+                <div class="row1">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </div>
+                <div class="row2">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </div>
+                <div class="row3">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </div>
+            </div>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    let dropdown = document.querySelector(".dropdown-menu");
+    let menu = document.querySelector(".menu");
+    
+    function showDropdown(){
+        dropdown.style.display = "block";
+    }
+    function hideDropdown(){
+        dropdown.style.display = "none";
+    }
+
+    menu.onmouseover  = showDropdown;
+    menu.onmouseleave = hideDropdown;
+
+</script>
+
+
+</html>
