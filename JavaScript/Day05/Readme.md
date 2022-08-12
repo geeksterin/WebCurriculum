@@ -201,6 +201,7 @@ console.log(areaOfCircle(10))
 
 6. [Return Early Pattern for Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-early-pattern-for-functions)
 
+<<<<<<< HEAD:JavaScript/Day05/Readme.md
 7. [Declare a function name swapValues. This function swaps value of x to y]()
 
 ```sh
@@ -220,3 +221,12 @@ evensAndOdds(100);
 The number of odds are 50.
 The number of evens are 51.
 ```
+=======
+7. [Convert Celsius to Fahrenheit](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/convert-celsius-to-fahrenheit)
+
+8. [Factorialize a Number](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/factorialize-a-number)
+
+9. [Sum All Numbers in a Range](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-numbers-in-a-range)
+
+
+>>>>>>> b1abb5750846df96e45b72f9bff3f71a1d1b5bc2:JavaScript/Day5/Readme.md

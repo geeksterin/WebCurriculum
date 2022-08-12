@@ -139,7 +139,7 @@ Number represents integer and floating numbers (decimals and exponentials).
 
 **Example**
 
-```
+```js
 const number1 = 3;
 const number2 = 3.433;
 const number3 = 3e5 // 3 * 10^5
@@ -149,7 +149,7 @@ A number type can also be +Infinity, -Infinity, and NaN (not a number).
 
 **Example**
 
-```
+```js
 const number1 = 3/0;
 console.log(number1); // Infinity
 
@@ -417,7 +417,11 @@ Logical operators perform logical operations and return a boolean value, either 
 | Operator      | Name | Example |
 | ----------- | ----------- |----------|
 | `&&`|**Logical AND:** true if both the operands are true, else returns false| `x && y`|
+<<<<<<< HEAD:JavaScript/Day02/Readme.md
 |  `\|\|`|**Logical OR:** true if either of the operands is true; returns false if both are false|`x\|\|y`|
+=======
+| `\|\|` |**Logical OR:** true if either of the operands is true; returns false if both are false|`a \|\| b`|
+>>>>>>> b1abb5750846df96e45b72f9bff3f71a1d1b5bc2:JavaScript/Day2/Readme.md
 |`!`|**Logical NOT:** true if the operand is false and vice-versa.|`x ! y`|
 
 **Example**
@@ -491,3 +495,5 @@ JavaScript tutorial
 8. [Multiply Two Decimals with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/multiply-two-decimals-with-javascript)
 9. [Divide One Decimal by Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/divide-one-decimal-by-another-with-javascript)
 10. [Finding a Remainder in JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/finding-a-remainder-in-javascript)
+11. [Finding Last Digit of number](#)
+12. 
