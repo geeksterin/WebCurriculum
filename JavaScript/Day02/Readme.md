@@ -417,7 +417,7 @@ Logical operators perform logical operations and return a boolean value, either 
 | Operator      | Name | Example |
 | ----------- | ----------- |----------|
 | `&&`|**Logical AND:** true if both the operands are true, else returns false| `x && y`|
-|  |**Logical OR:** true if either of the operands is true; returns false if both are false|``|
+|  `\|\|`|**Logical OR:** true if either of the operands is true; returns false if both are false|`x\|\|y`|
 |`!`|**Logical NOT:** true if the operand is false and vice-versa.|`x ! y`|
 
 **Example**
@@ -441,7 +441,7 @@ Bitwise operators perform operations on binary representations of numbers.
 |Operator|Description|
 | ----------- | ----------- |
 |`&`|Bitwise And|
-||Bitwise OR|
+|`\|`|Bitwise OR|
 |`^`|Bitwise XOR|
 |`~`|Bitwise NOT|
 |`<<`|Left Shift|

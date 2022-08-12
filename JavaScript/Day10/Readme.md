@@ -105,8 +105,6 @@ console.log(randomNumRoundToFloor)    // this gives between 0 and 10
 Time is an important thing. We like to know the time a certain activity or event. In JavaScript current time and date is created using JavaScript Date Object. The object we create using Date object provides many methods to work with date and time.The methods we use to get date and time information from a date object values are started with a word _get_ because it provide the information.
 _getFullYear(), getMonth(), getDate(), getDay(), getHours(), getMinutes, getSeconds(), getMilliseconds(), getTime(), getDay()_
 
-![Date time Object](../images/date_time_object.png)
-
 ## Creating a time object
 
 Once we create time object. The time object will provide information about time. Let us create a time object
@@ -326,3 +324,23 @@ let numInt = parseInt(num)
 
 console.log(numInt) // 9
 ```
+
+# Exercise
+
+1. [Generate a random number between 0 and 100 inclusively.]()
+
+2. [Generate a random number between 50 and 100 inclusively.]()
+
+3. [Generate a random number between 0 and 255 inclusively.]()
+
+```
+Use the Date object to do the following activities:
+```
+
+4. [What is the year today?]()
+5. [What is the month today as a number?]()
+6. [What is the date today?]()
+7. [What is the day today as a number?]()
+8. [What is the hours now?]()
+9. [What is the minutes now?]()
+10. [Find out the numbers of seconds elapsed from January 1, 1970 to now.]()

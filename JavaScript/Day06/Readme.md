@@ -537,3 +537,8 @@ console.log(string.repeat(10)) // lovelovelovelovelovelovelovelovelovelove
 12. [Use Bracket Notation to Find the Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-last-character-in-a-string)
 
 13. [Use Bracket Notation to Find the Nth-to-Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string)
+
+14. [Use match() to count the number of all because in the following sentence]()
+```
+You cannot end a sentence with because because because is a conjunction
+```

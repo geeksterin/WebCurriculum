@@ -22,8 +22,6 @@
 		- [Add an element from the beginning](#add-an-element-from-the-beginning)
 		- [Reversing array order](#reversing-array-order)
 		- [Sorting elements in array](#sorting-elements-in-array)
-	- [Array of arrays](#array-of-arrays)
-- [Exercise](#exercise)
 
 # Arrays
 
@@ -448,49 +446,3 @@ webTechs.reverse() // after sorting we can reverse it
 console.log(webTechs) // ["Redux", "React", "Node", "MongoDB", "JavaScript", "HTML", "CSS"]
 ```
 
-## Array of arrays
-
-Array can store different data types including an array itself. Let us create an array of arrays
-
-```js
-const firstNums = [1, 2, 3]
-const secondNums = [1, 4, 9]
-
-const arrayOfArray =  [[1, 2, 3], [1, 2, 3]]
-console.log(arrayOfArray[0]) // [1, 2, 3]
-
- const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
- const backEnd = ['Node','Express', 'MongoDB']
- const fullStack = [frontEnd, backEnd]
- console.log(fullStack)   // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
- console.log(fullStack.length)  // 2
- console.log(fullStack[0])  // ["HTML", "CSS", "JS", "React", "Redux"]
- console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
-```
-
-# Exercise
-
-1. [Store Multiple Values in one Variable using JavaScript Arrays](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/store-multiple-values-in-one-variable-using-javascript-arrays)
-
-2. [Nest one Array within Another Array](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/nest-one-array-within-another-array)
-
-3. [Access Array Data with Indexes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/access-array-data-with-indexes)
-
-4. [Modify Array Data With Indexes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/modify-array-data-with-indexes)
-
-5. [Access Multi-Dimensional Arrays With Indexes](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/access-multi-dimensional-arrays-with-indexes)
-
-6. [Manipulate Arrays With push()](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulate-arrays-with-push)
-
-7. [Manipulate Arrays With pop()](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulate-arrays-with-pop)
-
-8. [Manipulate Arrays With shift()](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulate-arrays-with-shift)
-
-9. [Manipulate Arrays With unshift()](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulate-arrays-with-unshift)
-
-10. [Accessing Nested Arrays](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/accessing-nested-arrays)
-
-11. [Iterate Through an Array with a For Loop](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/iterate-through-an-array-with-a-for-loop)
-
-
-12. [Return Largest Numbers in Arrays](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/return-largest-numbers-in-arrays)
