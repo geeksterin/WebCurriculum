@@ -8,6 +8,7 @@
 - [Submit button in an HTML Form](#submit-button-in-an-html-form)
 - [TextArea in an HTML Form](#textarea-in-an-html-form)
 - [Create an HTML form to input the basic details of a student](#create-an-html-form-to-input-the-basic-details-of-a-student)
+- [TO-DO](#to-do)
 # The `<form>` Element
 
 All forms start with a ``<form>`` element, like this:
@@ -350,3 +351,6 @@ To create this form, we need to use the ``<legend> ``tag to defined caption, ``<
 **Output:**
 
 ![form](./Images/form.png)
+
+# TO-DO
+[Learn HTML by Building a cat photo app](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-html-by-building-a-cat-photo-app)
