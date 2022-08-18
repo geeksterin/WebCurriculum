@@ -156,6 +156,7 @@ In this example, we use checkboxes to select language.
 ```
 
 **Output:**
+
 ![checkbox](./Images/checkbox.jpg)
 
 
