@@ -11,6 +11,11 @@
     - [Rename file](#rename-file)
     - [Moving file and directory](#moving-file-and-directory)
     - [Delete file and directory](#delete-file-and-directory)
+  - [Git and GitHub](#git-and-github)
+    - [1. Install Git](#1-install-git)
+    - [2. Checking status of the repository](#2-checking-status-of-the-repository)
+    - [3. Configure your name and your email](#3-configure-your-name-and-your-email)
+    - [4. Create a local git repository](#4-create-a-local-git-repository)
 
   # Day 1
 
@@ -234,3 +239,36 @@ $ ls
 Day-01/  day1-backup.txt  day2/  day3/  day4/
 ```
 Congratulations, you've finished the basic commands. practice these commands right away to better understand them.
+
+
+## Git and GitHub
+Git: During the course of software development, changes to source code are monitored using the Git distributed version control system. Although it is intended for programmers, it may be used to keep track of changes to any set of files. Speed, data integrity, and support for dispersed, non-linear workflows are among its objectives.
+
+GitHub: GitHub is a web-based service for hosting Git repositories. It provides all of Git's distributed revision control and source code management (SCM) functions in addition to a few extras.
+![](image/git_v_github.png)
+
+### 1. Install Git
+First, you need to install the version control software, Git.
+
+- Git:
+  Install [git](https://git-scm.com/downloads)
+  
+### 2. Checking status of the repository
+  The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git. 
+  ```shell
+  git status
+```
+### 3. Configure your name and your email
+The global git username and email address are associated with commits on all repositories on your system that don’t have repository-specific values.
+
+To set your global commit name and email address run the git config command with the --global option.
+
+```shell
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+```
+### 4. Create a local git repository
+You will create a folder (directory) for your project in this stage. A project is only a folder where all the files relevant to a particular project are kept. A project or folder on your PC is referred to as a local repository.
+```shell
+mkdir project_name
+cd project_name
