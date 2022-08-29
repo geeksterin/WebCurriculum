@@ -14,7 +14,8 @@
     - [13 Forking](#13-forking)
  - [Git repository user interface features](#git-repository-user-interface-features)
 
-# Day 2
+  - [Git Basics Exercises](#git-basics-exercises)
+  # Day 2
 
 
 ### 1. Initialize Git
@@ -143,6 +144,19 @@ A fork is a copy of a repository that you manage. Forks let you make changes to 
 Learn about the features of your GitHub account and the accessible repositories.
 Account and repository settings are available in Git. Explore the features that are offered.
 ![](image/Git-repository.png)
+
+# Git Basics Exercises
+- Initialize an empty git repository.
+- Add first.txt to the staging area.
+- Commit with the message "adding first.txt".
+- Check out your commit with git log.
+- Create another file called second.txt.
+- Add second.txt to the staging area.
+- Commit with the message "adding second.txt"
+- Remove the first.txt file
+- Add this change to the staging area
+- Commit with the message "removing first.txt"
+- Check out your commits using git log
 
 Give yourself a pat on the back if you've completed this far🎉.
 
