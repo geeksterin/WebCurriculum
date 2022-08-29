@@ -16,7 +16,7 @@
     - [2. Checking status of the repository](#2-checking-status-of-the-repository)
     - [3. Configure your name and your email](#3-configure-your-name-and-your-email)
     - [4. Create a local git repository](#4-create-a-local-git-repository)
-
+   - [Git Basics Exercises](#git-basics-exercises)
   # Day 1
 
 ## Basic Command Lines
@@ -272,3 +272,9 @@ You will create a folder (directory) for your project in this stage. A project i
 ```shell
 mkdir project_name
 cd project_name
+```
+# Git Basics Exercises
+- Create a folder called learn_with_geekster.
+- cd into the learn_with_geekster folder.
+- Create a file called first.txt.
+- Configure your name and your email
