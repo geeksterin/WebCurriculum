@@ -183,5 +183,9 @@ You should be proud of yourself if you have read this far🎉🎉.
 You are amazing, and each day brings more and more improvement.
 	
 Don't be afraid to put these exercises into practice to get better at the following topic.
+
 	
 ## Exercises
+1. Generating the keyboard code code using even listener. The image below.
+
+![Keyboard key](./img-1/dom_min_project_keycode_day_3.2.gif)
