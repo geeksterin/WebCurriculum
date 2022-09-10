@@ -131,3 +131,11 @@ You are incredible, and you are becoming better every day.
 Now that you were aware of how to remove a DOM element when it was no longer required. You gained knowledge of DOM and can now create and develop applications.
 
 ## Exercises
+
+Create a div container on HTML document and create 100 to 100 numbers dynamically and append to the container div. 
+   - Even numbers background is green
+   - Odd numbers background is yellow
+   - Prime numbers background is red
+   
+   
+   ![Number Generator](./img/dom_min_project_day_number_generators_2.1.png)
