@@ -2,7 +2,7 @@
   - [Exercises](#exercises)
     - [Exercise: Level 1](#exercise-level-1)
 
-# Day 24
+# Day 04
 
 ## Exercises
 
