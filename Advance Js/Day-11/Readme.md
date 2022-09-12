@@ -26,14 +26,17 @@ The numerous sorts of browser objects used to interact with the browser are part
 
 Since Window is the browser's default object, you can call its functions directly.
 
-The important BOM objects are as:
+## The important BOM objects are as:
 
-document
-location
-history
-navigator
-screen
-frames
+**document** - The HTML file that the browser has loaded is represented by this object. An object called a document object gives users access to all of a document's HTML elements (webpage). We can alter any existing HTML tag, add a new HTML tag to the webpage, etc. with this object.
+
+**location** -Location is a built-in object which represent the location of the object to which it is linked, which can be Window or Document. Both the Document and Window interface have a linked location property.
+
+**history** - It stores Uniform Resource Locator(URLs) visited by a user in the browser. It is a built-in object which is used to get browser history. This object is a property of the JavaScript Window object.
+
+**navigator** - It acts as a storehouse of all the data and information about the Browser software used to access the webpage and this object is used to fetch information related to the browser for example, whether the user is using Chrome browser or Safari browser, which version of browser is being used etc.
+
+**screen** - It is a built-in object which is used to fetch information related to the browser screen, like the screen size, etc. It is also obtained from the Window object.
 
 ## BOM Example
 ```html
