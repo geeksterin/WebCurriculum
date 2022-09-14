@@ -1,128 +1,178 @@
-- [Day2](#day-2)
-  - [DOM(Document Object Model)-Day 2](#domdocument-object-model-day-2)
-    - [Creating an Element](#creating-an-element)
-    - [Creating elements](#creating-elements)
-    - [Appending child to a parent element](#appending-child-to-a-parent-element)
-    - [Removing a child element from a parent node](#removing-a-child-element-from-a-parent-node)
+# Learn DOCUMENT OBJECT MODEL(DOM) with Geekster
+
+- [Day 2](#day-2)
+- [DOM(Document Object Model)-Day 2](#domdocument-object-model-day-2)
+  - [Creating an Element](#creating-an-element)
+  - [Creating elements](#creating-elements)
+  - [Appending child to a parent element](#appending-child-to-a-parent-element)
+  - [Removing a child element from a parent node](#removing-a-child-element-from-a-parent-node)
   - [Exercises](#exercises)
 
 # Day 2
-
 ## DOM(Document Object Model)-Day 2
 
 ### Creating an Element
-In an HTML document, the document.createElement() method creates the HTML element
+In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.
+
+**SYNTAX**
 
 ```js
-// syntax
-const element = document.createElement(htmlTag);
+document.createElement("elementName");
 ```
+**EXAMPLE**
+
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to Geekster course of Advance JavaScript</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn DOM with Geekster</title>
 </head>
 <body>
+    
+    <button onclick = "create()"> click here to create</button> 
     <script>
-        let title = document.createElement('h1')
-        title.className = 'title'
-        title.style.fontSize = '24px'
-        title.textContent = 'Creating HTML element DOM Day 2'
-        console.log(title)
+        function create() {
+            var x = document.createElement("h1");
+            var t = document.createTextNode("Hello Geeks! welcome to Geekster✈️");
+            x.appendChild(t);
+            document.body.appendChild(x);
+        }
     </script>
 </body>
 </html>
 ```
+
+**OUTPUT**
+
+Before clicking button
+
+![](./image/beforecreating)
+
+After clicking button 
+
+![](./image/aftercreating)
+
+<hr>
+
 ### Creating elements
 
-To create multiple elements we should use loop. Using loop we can create as many HTML elements as we want.
-After we create the element we can assign value to the different properties of the HTML object.
+Use a loop to create numerous items. We can generate as many HTML components as we like using the loop.
+The various properties of the HTML object can be given values after the element is created.
+
+**EXAMPLE**
 
 ```html
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Welcome to Geekster course of Advance JavaScript</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn DOM with Geekster</title>
 </head>
-
 <body>
-
+    <button onclick="create()"> click multiple elements</button> 
     <script>
-        let title
+        function create() {
+            let title
         for (let i = 0; i < 3; i++) {
             title = document.createElement('h1')
             title.className = 'title'
             title.style.fontSize = '24px'
-            title.textContent = i
+            title.textContent = `Hello geek ${i}`;
             console.log(title)
         }
+    }
     </script>
 </body>
-
 </html>
 ```
+**OUTPUT**
+
+![](./image/multipleelements)
+
+<hr>
+
 ### Appending child to a parent element
 
 The appendChild() is a method of the Node interface. The appendChild() method allows you to add a node to the end of the list of child nodes of a specified parent node.
-```html
-<!DOCTYPE html>
-<html>
 
-<head>
-    <title>Welcome to Geekster course of Advance JavaScript</title>
-</head>
+**SYNTAX**
 
-<body>
-    <script>
-        // creating multiple elements and appending to parent element
-        let title
-        for (let i = 0; i < 3; i++) {
-            title = document.createElement('h1')
-            title.className = 'title'
-            title.style.fontSize = '24px'
-            title.textContent = i
-            document.body.appendChild(title)
-        }
-    </script>
-</body>
-</html>
+```js
+ParentNode.append( ChildNodesToPrepend);
 ```
+**EXAMPLE**
+
+```html
+       <!DOCTYPE html>
+       <html lang="en">
+       
+       <body>
+        <h1>Geekster✈️</h1>
+       
+        <script>
+         var parent = document.createElement("div");
+         parent.innerHTML = "Geekster - ";
+         parent.append(" Best Online Platform to Learn Programming");
+         console.log(parent.textContent);
+        </script>
+       </body>
+       
+       </html>
+       
+```
+**OUTPUT**
+
+In this example, we have appended some text to innerHTML of the element and the element’s textContent. In console, you can see textContent of parent element.
+
+![](./image/append.png)
+
+<hr>
+
 ### Removing a child element from a parent node
-After creating an HTML, we may want to remove element or elements and we can use the *removeChild()* method.
+RemoveChild() and remove() are two methods for removing nodes from their parents, respectively ().
+Setting the innerHTML="" property to an empty string also has the same effect of removing all children from a node. It is not recommended to utilise this strategy.
 
-**Example:**
+**SYNTAX**
+
+```js
+ParentNode.append( ChildNodesToPrepend);
+```
+**EXAMPLE**
 
 ```html
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Document Object Model:30 Days Of JavaScript</title>
-</head>
-
-<body>
-    <h1>Removing child Node</h1>
-    <ul>
-       <li>list-1</li>
-       <li>list-2</li>
-       <li>list-3</li>
-       <li>list-4</li>
-       <li>list-5</li>
-    </ul>
-
-    <script>
-        const ul = document.querySelector('ul')
-        const lists = document.querySelectorAll('li')
-        for (const list of lists) {
-            ul.removeChild(list)
-        }
-    </script>
-</body>
-
-</html>
+       <!DOCTYPE html>
+       <html lang="en">
+       
+       <body>
+        <h1>Geekster✈️</h1>
+       
+        <script>
+         var parent = document.createElement("div");
+         parent.innerHTML = "Geekster - ";
+         parent.append(" Best Online Platform to Learn Programming");
+         console.log(parent.textContent);
+        </script>
+       </body>
+       
+       </html>
+       
 ```
+**OUTPUT**
+
+Before Clicking on Button:
+
+![](./image/beforeremoving.png)
+
+After Clicking on Button:
+
+![](./image/afterremoving.png)
+
+<hr>
 
 If you've made it this far, congratulate yourself🎉🎉.
 
@@ -131,11 +181,3 @@ You are incredible, and you are becoming better every day.
 Now that you were aware of how to remove a DOM element when it was no longer required. You gained knowledge of DOM and can now create and develop applications.
 
 ## Exercises
-
-Create a div container on HTML document and create 100 to 100 numbers dynamically and append to the container div. 
-   - Even numbers background is green
-   - Odd numbers background is yellow
-   - Prime numbers background is red
-   
-   
-   ![Number Generator](./img/dom_min_project_day_number_generators_2.1.png)
