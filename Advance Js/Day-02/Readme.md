@@ -49,11 +49,11 @@ document.createElement("elementName");
 
 Before clicking button
 
-![](./image/beforecreating)
+![](./image/beforecreating.png)
 
 After clicking button 
 
-![](./image/aftercreating)
+![](./image/aftercreating.png)
 
 <hr>
 
@@ -92,7 +92,7 @@ The various properties of the HTML object can be given values after the element 
 ```
 **OUTPUT**
 
-![](./image/multipleelements)
+![](./image/multipleelements.png)
 
 <hr>
 
