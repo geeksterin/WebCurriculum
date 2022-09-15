@@ -1,4 +1,16 @@
-# Day 05
+# Mini Project: World Countries Data Visualization
+
+### Day 05
+
+<hr>
+
+Hello Geeks!👋
+
+If you have done the previous mini project it's great you are going really well. Now the next task is to Visualize the ten most populated countries and the ten most spoken languages in the world using DOM(HTML, CSS, JS).
+
+The data is given to you in countries_data.js file so, try your hands on this project.
+
+<hr> 
 
 ## Exercises
 
