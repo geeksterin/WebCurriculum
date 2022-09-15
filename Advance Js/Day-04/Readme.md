@@ -1,12 +1,22 @@
+# Mini Project: Solar System
+
+<hr>
+
+Dear Geeks! We will now complete a few quick mini-projects to recap the topics we have already covered.
+You should try to complete this project since it will help you better comprehend HTML, CSS, Javascript, and concepts like event listeners and dom manipulation.
+
+So, don't be afraid to try it.
+
+<hr>
+
 - [Day 04](#day-04)
-  - [Exercises](#exercises)
-    - [Exercise: Level 1](#exercise-level-1)
+ - [Exercises](#exercises)
+
 
 # Day 04
 
 ## Exercises
 
-### Exercise: Level 1
 
 1. Develop a small application which calculate a weight of an object in a certain planet. 
 
