@@ -1,6 +1,18 @@
+# Mini Project
+
+<hr>
+
+Dear Geeks!👋
+
+It's excellent that you are doing so well if you completed the prior mini project. You are getting better every day, and now we will explore how to use HTML, CSS, and JavaScript to make the next page.
+
+Therefore, keep on and try out this project.
+
+<hr>
+
 - [Day 08](#day-08)
   - [Exercises](#exercises)
-    - [Exercise: Level 1](#exercise-level-1)
+ - [Exercise: Level 1](#exercise-level-1)
 
 # Day 08
 
