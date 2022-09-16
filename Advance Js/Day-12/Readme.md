@@ -1,0 +1,347 @@
+# Learn ES6 concepts with Geekster
+
+- [Introduction to the ES6 course](#Introduction-to-the-ES6-course)
+- [Template Literals](#Template-Literals)
+- [Destructuring objects](Destructuring-objects)
+- [Destructuring Arrays](#Destructuring-Arrays)
+- [Spread Operator](#Spread-Operator)
+- [Rest Operator](#Rest-Operator)
+- [Arrow Functions](#Arrow-Functions)
+- [Let & Const](#Let-&-Const)
+- [Promises](#Promises)
+- [Introduction: Fetch](#Introduction-Fetch)
+- [Async & Await](#Async-&-Await)
+
+<hr>
+
+## Introduction to the ES6 course
+
+The sixth iteration of the ECMAScript programming language is known as ES6 or ECMAScript 2015. The standardisation of Javascript, known as ECMAScript, was made available in 2015 and given the new name ECMAScript 2015.
+Both ECMAScript and Javascript have different natures.
+
+Since Javascript ES6 has been around for a while, we can write code in a clever style that essentially makes the code more current and easier to read. With the use of ES6 capabilities, it's reasonable to state that we write less and accomplish more, therefore the phrase "write less, do more" absolutely applies to ES6.
+
+Const, let, arrow functions, template literals, default parameters, and many other important features were introduced in ES6.
+
+<hr>
+
+## Template Literals
+
+In ES6, Template Literal offers new features that allow you to generate a string with more control over dynamic strings. String is typically created with either single (') or double (") quotes. The backtick (') is used to produce the template literal.
+
+**SYNTAX**
+
+```js
+var s=`Geekster`;
+```
+
+**EXAMPLE**
+
+```js
+<script>
+var s=String.raw`Welcome to Geekster Value of expression is ${2*3}`;
+document.write(s);
+</script>
+```
+
+**OUTPUT**
+
+```js
+Welcome to Geekster Value of expression is 6
+```
+
+<hr>
+
+## Destructuring objects
+
+A JavaScript statement called "Destructuring Assignment" enables the unpacking of array contents or object properties into separate variables. Data can be taken out of arrays, objects, nested objects, and variable assignments. The left-hand side of the Destructuring Assignment defined which value should be unpacked from the supplied variable.
+
+**SYNTAX**
+
+```js
+({ x, y} = { x: 10, y: 20 });
+console.log(x); // 10
+console.log(y); // 20
+```
+
+**EXAMPLE**
+
+```js
+<script>
+var age= {x: 21, y: -34, z: 47 };
+const { x, y, z } = age; // x = 21, y = -34, z = 47
+console.log(x);
+console.log(y);
+console.log(z);
+</script>
+```
+
+**OUTPUT**
+
+```js
+21
+-34
+47
+```
+
+<hr>
+
+## Destructuring Arrays
+
+**SYNTAX**
+
+```js
+({ x, y} = { x: 10, y: 20 });
+console.log(x); // 10
+console.log(y); // 20
+```
+
+**EXAMPLE**
+
+```js
+<script>
+var names = ["Geek1", "Geek2", "Geek3", "Geek4"];
+
+var firstName = names[3];
+var secondName = names[2];
+
+console.log(firstName);
+console.log(secondName);
+</script>
+```
+
+**OUTPUT**
+
+```js
+Geek4
+Geek3
+```
+
+<hr>
+
+## Spread Operator
+
+An iterable can extend using the spread operator in areas where 0+ arguments are anticipated. It is typically used in variable arrays where more than one value is anticipated. We have the right to get a list of parameters from an array thanks to it. Spread operator's syntax is identical to that of the Rest parameter, but it functions completely differently.
+
+**SYNTAX**
+
+```js
+var variablename1 = [...value]; 
+```
+
+**EXAMPLE**
+
+```js
+let arr1 = ['G','E','E','K'];
+let arr2 = ['S','T','E','R'];
+let arr=[...arr1,...arr2]   
+console.log(arr);
+```
+
+**OUTPUT**
+
+![](./image/spread.png)
+
+<hr>
+
+## Rest Operator
+
+The rest parameter is a better technique to handle function parameters since it makes it simpler to handle different inputs as function parameters. We can specify an infinite number of arguments as an array using the remainder parameter syntax. No matter how a function was defined, it can be called with any amount of parameters by using the remainder parameter. The addition of the rest parameter in ES2015 or ES6 improves the ability to handle parameters.
+
+**SYNTAX**
+
+```js
+function functionname(...parameters)   //... is the rest parameter (triple dots)
+{
+statement;
+}
+```
+
+**EXAMPLE**
+
+```js
+function fun(...input){
+    let sum = 0;
+    for(let i of input){
+        sum+=i;
+    }
+    return sum;
+}
+console.log(fun(1,2)); //3
+console.log(fun(1,2,3)); //6
+console.log(fun(1,2,3,4,5)); //15
+```
+
+**OUTPUT**
+
+![](./image/rest.png)
+
+<hr>
+
+## Arrow Functions
+
+The fundamental building block of any programming language is function, which is used to create and combine related pieces of code. Every programming language offers a specific set of guidelines for writing any function. One of the most popular and effective syntaxes for writing a function in JavaScript is the arrow function.
+
+**SYNTAX**
+
+```js
+const myFunction = (param1, param2,
+    .... paramN) => { // function code }
+const myFunction = (param) => { // function code }
+                      or 
+const myFunction = param => { // function code }  
+const myFunction = param => { return param*param }
+                      or 
+const myFunction = param => param*param
+```
+
+**EXAMPLE**
+
+```js
+<script>
+const myFunction = () =>{
+  let a = 5, b = 4;
+  return a+b;
+}
+console.log(myFunction());
+</script>
+```
+
+**OUTPUT**
+
+```js
+9
+```
+
+<hr>
+
+## Let & Const
+
+In JavaScript, the let keyword is used to declare variables that are to be made as block-scoped, i.e., it allows us to declare a variable within a block or within an expression rather than in the entire document. Let variables cannot be accessed outside of the block-scope that has been set up for them.
+
+**SYNTAX**
+
+```js
+let variable_name = value;
+const x = 12;
+```
+
+**EXAMPLE**
+
+```js
+let name = "Geekster";
+const x = 12;
+```
+Key difference: The variable declared by let keyword can be reassigned whereas a variable declared with const keyword can never be reassigned within the same scope.
+
+<hr>
+
+## Promises
+
+In JavaScript, asynchronous operations are managed through promises. When dealing with several asynchronous activities, where callbacks might lead to callback hell and incomprehensible code, they are simple to manage.
+
+The callback hell that would result from having several callback functions would make the code unmanageable. Additionally, managing several callbacks at once is difficult for any user.
+Events had difficulty handling asynchronous tasks.
+
+For handling asynchronous actions in the simplest way possible, promises are the best option. In comparison to callbacks and events, they can manage many asynchronous activities with ease and offer better error handling. In other words, promises are the best option for managing several callbacks concurrently, preventing the undesirable callback hell scenario. Promises do give users a greater chance to interpret code more effectively and efficiently, especially when such code is being utilized to implement several asynchronous actions.
+
+**Four states make up a promise**
+
+fulfilled: successful promise-related action.
+rejected: A promise-related action failed 
+pending: Promise has not yet been fulfilled
+settled: Promise has fulfilled or rejected
+
+**SYNTAX**
+
+```js
+var promise = new Promise(function(resolve, reject){
+     //do something
+});
+```
+
+**EXAMPLE**
+
+```js
+var promise = new Promise(function(resolve, reject) {
+const x = "Geekster";
+const y = "Geekster"
+if(x === y) {
+	resolve();
+} else {
+	reject();
+}
+});
+
+promise.
+	then(function () {
+		console.log('Success, You are a GEEK');
+	}).
+	catch(function () {
+		console.log('Some error has occurred');
+	});
+```
+
+**OUTPUT**
+
+Upon fulfilling a promise
+
+![](./image/promiseresolve.png)
+
+After Rejecting promise
+
+![](./image/promisereject.png)
+
+<hr>
+
+## Introduction: Fetch
+
+JavaScript's get() method is used to make requests to the server and load data onto webpages. Any API that returns data in the JSON or XML format can be requested. A promise is returned by this procedure.
+
+**SYNTAX**
+
+```js
+vfetch('url')           //api for the get request
+  .then(response => response.json())
+  .then(data => console.log(data));
+```
+The two parameters that this method accepts are as follows and are specified above:
+
+URL: This is the URL that the request should be sent to.
+
+Options: The set of properties is an array. It is a choice-based parameter.
+
+Return Value: Whether it is resolved or not, it returns a promise. The returned information may be in the XML or JSON formats. It could be a collection of objects or just one object.
+
+
+**EXAMPLE**
+
+```js
+
+```
+
+**OUTPUT**
+
+
+
+![](./image/)
+
+<hr>
+
+## Async & Await
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
