@@ -1,3 +1,4 @@
+- [Installing Node](#installing-node)
 - [Data Types](#data-types)
 	- [Primitive Data Types](#primitive-data-types)
 	- [Non-Primitive Data Types](#non-primitive-data-types)
@@ -19,6 +20,30 @@
     - [String Operators](#string-operators)
     - [Other Operators](#other-operators)
 - [Excercise](#excercise)
+
+
+# Installing Node
+
+![Node download](../Day01/images/download_node.png)
+
+After downloading click next, next and install
+
+We can check if node is installed on our local machine by opening our device terminal or command prompt.
+
+```sh
+node -v
+v14.17.3
+```
+
+When making this tutorial I was using Node version v14.17.3, by the time you use this material you may have a higher Node.js version.
+
+# Setting up VS Code
+
+Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
+## Download VSCode
+- https://code.visualstudio.com/
+
+
 
 # Data Types
 
@@ -493,3 +518,5 @@ JavaScript tutorial
 9. [Divide One Decimal by Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/divide-one-decimal-by-another-with-javascript)
 10. [Finding a Remainder in JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/finding-a-remainder-in-javascript)
 11. [Finding Last Digit of number](#)
+
+

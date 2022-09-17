@@ -145,7 +145,17 @@ Learn about the features of your GitHub account and the accessible repositories.
 Account and repository settings are available in Git. Explore the features that are offered.
 ![](image/Git-repository.png)
 
-# Git Basics Exercises
+
+## Github pages
+Hosted website directly from your GitHub repository. You can edit, push your changes and make it live.
+
+![](./image/1_ztYDE6j3QQ9_lEneHt0PBg.gif)
+
+
+
+
+
+# Git Basics Exercises - 1
 - Initialize an empty git repository.
 - Add first.txt to the staging area.
 - Commit with the message "adding first.txt".
@@ -157,6 +167,11 @@ Account and repository settings are available in Git. Explore the features that 
 - Add this change to the staging area
 - Commit with the message "removing first.txt"
 - Check out your commits using git log
+- Create a github repository with your own name
+- Push your code to same repository
+- Host the repository on github pages
+
+
 
 Give yourself a pat on the back if you've completed this far🎉.
 
@@ -165,3 +180,6 @@ You have successfully finished Geekster's GitHub course.
 
 
 Now you have a fair knowledge of git and GitHub, don't forget to get your hands dirty with these commands.
+
+
+

@@ -5,7 +5,6 @@
     - [What JavaScript cannot do in browser](#what-javascript-cannot-do-in-browser)
     - [Why is JavaScript unique from other programming language](#why-is-javascript-unique-from-other-programming-language)
 - [Setup](#setup)
-	- [Install Node.js](#install-nodejs)
     - [Installing Mozilla FireFox](#installing-mozilla-firefox)
         - [Opening FireFox Console](#opening-FireFox-console)
             - [Console.log](#consolelog)
@@ -70,18 +69,6 @@ I believe you have the motivation and a strong desire to be a developer, a compu
 
 You may not need Node.js right now but you may need it for later. Install [node.js](https://nodejs.org/en/).
 
-![Node download](./images/download_node.png)
-
-After downloading click next, next and install
-
-We can check if node is installed on our local machine by opening our device terminal or command prompt.
-
-```sh
-node -v
-v14.17.3
-```
-
-When making this tutorial I was using Node version v14.17.3, by the time you use this material you may have a higher Node.js version.
 
 ## Installing Mozilla FireFox
 
