@@ -703,5 +703,32 @@ After clicking button
 ![](./image/afterfontchange.png)
 
 
-### Exercise:
+## Exercise: Level-1
+
+
+1. You are given a DOM element 
+	
+```html
+	<p class="wrote"> </p>
+	<input type="text" />.
+```
+Your job is output what ever is typed in the input into the p tag.
+	
+![](./image/ex-1.png)	
+
+<hr>
+
+## Exercise: Level-2
+	
+2. You are given a list of DOM elements inside a 
+	
+```html
+	<ul class="has-children"></div>.
+```
+	
+Your job is to give the first child a blue background, the last child a palevioletred background and the 9th child a green background. Then make all of the even numbers lime.
+	
+![](./image/ex-2.png)	
+	
+<hr>
 	
