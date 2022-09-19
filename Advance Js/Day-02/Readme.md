@@ -181,3 +181,7 @@ You are incredible, and you are becoming better every day.
 Now that you were aware of how to remove a DOM element when it was no longer required. You gained knowledge of DOM and can now create and develop applications.
 
 ## Exercises
+
+Use JavaScript to create a "to-do list" to organize and prioritize your daily routine.
+
+![](./image/tdl.png)
