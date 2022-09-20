@@ -420,6 +420,18 @@ Don't be afraid to put these exercises into practice to get better at the foll
 
 	
 ## Exercises
+
 1. Generating the keyboard code code using even listener. The image below.
 
 ![Keyboard key](./img-1/dom_min_project_keycode_day_3.2.gif)
+
+<hr>
+
+2. In order for this website to function, there are a number of buttons on the page that represent the various drums in a standard drum set, and when you click on any of those buttons, the accompanying drum sound will play. 
+Additionally, you can create sound effects using the keyboard's keys.
+
+![](./image/drum-kit.png)
+
+After completing this project, you will not only have a better understanding of how to add event listeners to buttons and keystrokes so that you can recognise when a user is tapping the keyboard or clicking a specific button on your Website and react to it, but you will also have an awesome Website that will wow all of your friends.
+
+[Checkout this website for refrence ](https://shreyajaiswal11.github.io/Drum-Kit/)
