@@ -182,6 +182,8 @@ Now that you were aware of how to remove a DOM element when it was no longer req
 
 ## Exercises
 
-Use JavaScript to create a "to-do list" to organize and prioritize your daily routine.
+1. Let's perform some fun exercises and rename Google search to Geekster Search.
 
-![](./image/tdl.png)
+![](./image/geekster_search.png)
+
+2. 
