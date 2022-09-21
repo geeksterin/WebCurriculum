@@ -88,7 +88,7 @@ document.getElementById("demo").innerHTML =jsonobj;
 
 **OUTPUT**
 
-![](./image/json1)
+![](./image/json1.png)
 
 ## JavaScript JSON stringify() Method
 
@@ -116,7 +116,7 @@ JSON.stringify(value, replacer, space);
 
 **OUTPUT**
 
-![](./image/json2)
+![](./image/json2.png)
 
 ## Exercise
 
