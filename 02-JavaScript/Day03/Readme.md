@@ -185,6 +185,8 @@ isRaining
   : console.log('No need for a rain coat.')
 ```
 
+More Examples - https://www.programiz.com/javascript/ternary-operator
+
 # Exercise
 
 1. [Use Conditional Logic with If Statements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-conditional-logic-with-if-statements)

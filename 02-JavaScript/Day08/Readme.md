@@ -55,3 +55,7 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 3. Find the average age(all items divided by number of items)
 4. Find the range of the ages(max minus min)]
 ```
+
+
+# Exercise
+- Todo

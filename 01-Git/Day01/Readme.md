@@ -1,5 +1,5 @@
-- # [Basic Command Lines](#basic-command-lines)
-- [Current working directory](#current-working-directory)
+# [Basic Command Lines](#basic-command-lines)
+  - [Current working directory](#current-working-directory)
     - [Navigating directory](#navigating-directory)
     - [Making Directory](#making-directory)
     - [List files and directories](#list-files-and-directories)
@@ -17,7 +17,8 @@
     - [3. Configure your name and your email](#3-configure-your-name-and-your-email)
     - [4. Create a local git repository](#4-create-a-local-git-repository)
    - [Git Basics Exercises](#git-basics-exercises)
-  # Day 1
+
+# Day 1
 
 ## Basic Command Lines
 Your computer's text interface is called the command line. It is a programme that receives instructions and sends them to the computer's operating system for execution.
@@ -279,3 +280,8 @@ cd project_name
 - Create a file called first.txt.
 - Display the file content in terminal.
 - Configure your name and your email
+
+
+## Basics Exercises
+-  [TBD] web project folder structure using command line
+

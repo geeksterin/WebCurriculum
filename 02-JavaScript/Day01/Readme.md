@@ -257,14 +257,14 @@ Here i and j are variables.
 
 the assignment operator ```=``` to assign a value to a variable.
 
-```
+```js
 let x;
 x=10;
 ```
 Here, 10 is assigned to variable x.
 
 You can also initialize variables during its declaration.
-```
+```js
 let x=10;
 ```
 In JavaScript, it's possible to declare variables in a single statement.
@@ -272,7 +272,7 @@ In JavaScript, it's possible to declare variables in a single statement.
 
 If you use a variable without initializing it, it will have an undefined value.
 
-```
+```js
 let x;
 console.log(x); // undefined
 ```
@@ -285,7 +285,7 @@ It's possible to change the value stored in the variable.
 
 **Example**
 
-```
+```js
 // 5 is assigned to variable x
 let x = 5; 
 console.log(x); // 5
@@ -300,7 +300,7 @@ console.log(x); // 3
 1. Variable names must start with either a letter, an underscore _, or the dollar sign $.
 
 **Example**
-```
+```js
 //valid
 let a = 5;
 let _a = 5;
@@ -310,7 +310,7 @@ let $a = 5;
 2. Variable names cannot start with numbers.
 
 **Example**
-```
+```js
 //invalid
 let 1a=5;
 ```
@@ -318,7 +318,7 @@ let 1a=5;
 3. JavaScript is case-sensitive. So x and X are different variables.
 
 **Example**
-```
+```js
 let x = "Hello";
 let X = 5;
 
@@ -330,7 +330,7 @@ console.log(X); // 5
 
 **Example**
 
-```
+```js
 //invalid
 let new = 5; // Error! new is a keyword.
 ```

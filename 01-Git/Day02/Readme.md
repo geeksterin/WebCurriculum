@@ -171,6 +171,11 @@ Hosted website directly from your GitHub repository. You can edit, push your cha
 - Push your code to same repository
 - Host the repository on github pages
 
+# Git Basics Exercises - 2
+- fork a website [portfolio page]
+- clone that website
+- host on github pages
+
 
 
 Give yourself a pat on the back if you've completed this far🎉.
