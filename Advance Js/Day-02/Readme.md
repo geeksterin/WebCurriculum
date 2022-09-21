@@ -181,3 +181,9 @@ You are incredible, and you are becoming better every day.
 Now that you were aware of how to remove a DOM element when it was no longer required. You gained knowledge of DOM and can now create and develop applications.
 
 ## Exercises
+
+1. Let's perform some fun exercises and rename Google search to Geekster Search.
+
+![](./image/geekster_search.png)
+
+2. 
