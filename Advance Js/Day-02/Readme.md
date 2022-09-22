@@ -196,7 +196,7 @@ Now that you were aware of how to remove a DOM element when it was no longer req
 
 **After button click**
 
-![](./image/bgeek.png)
+![](./image/geek.png)
 
 <hr>
 
