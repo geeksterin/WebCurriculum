@@ -343,7 +343,7 @@ Return Value: Whether it is resolved or not, it returns a promise. The returned 
 
 **OUTPUT**
 
-![](./image/fetch.jpg)
+![](./image/fetch.png)
 
 <hr>
 
