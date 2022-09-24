@@ -316,23 +316,80 @@ Return Value: Whether it is resolved or not, it returns a promise. The returned 
 
 **EXAMPLE**
 
-```js
-
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | fetch() Method</title>
+</head>
+<body>
+    <script>
+        // API for get requests
+        let fetchRes = fetch(
+"https://jsonplaceholder.typicode.com/todos/1");
+        // fetchRes is the promise to resolve
+        // it by using.then() method
+        fetchRes.then(res =>
+            res.json()).then(d => {
+                console.log(d)
+            })
+    </script>
+</body>
+</html>
 ```
 
 **OUTPUT**
 
-
-
-![](./image/)
+![](./image/fetch.jpg)
 
 <hr>
 
 ## Async & Await
 
+Async: It simply enables us to write promises-based code in the same manner as synchronous code while also ensuring that we don't interfere with the thread of execution. It uses the event-loop to run asynchronously. A value is always returned by async functions. It guarantees that promises be fulfilled, and if they are not, JavaScript automatically wraps them in promises that are resolved with their values.
 
+**SYNTAX**
 
+```js
+const getData = async() => {
+    var data = "Hello Geeks";
+    return data;
+} 
+getData().then(data => console.log(data));
+```
 
+**OUTPUT**
+
+```js
+Hello Geeks
+```
+
+Await: To wait for the promise, use the await function. It could only be applied to the async block. It instructs the code to wait until the promise responds. It merely delays the async block.
+
+**SYNTAX**
+
+```js
+const getData = async() => {
+    var y = await "Hello Geeks";
+    console.log(y);
+}
+ 
+console.log(1);
+getData();
+console.log(2);
+```
+**OUTPUT**
+
+```js
+1
+2
+Hello Geeks
+```
+
+<hr>
 
 
 
