@@ -27,3 +27,17 @@ You need to use Vanilla Javascript and the MealDB API to construct an online rec
 ![](./image/meal-finder.png)
 
 <hr>
+
+## Real-time Weather app
+
+For getting meteorological information, you can use the Dark Sky API, it is a terrific opportunity for you to learn how to communicate with APIs, which is another great thing you can do with JavaScript. 
+
+![](./image/weather.jpg)
+
+## Random Quote Generator Using HTML, CSS, and JavaScript
+
+fetch the data from API and then display the quotes in card format.
+
+![](./image/quote.png)
+
+<hr>
