@@ -13,14 +13,17 @@
 In order to communicate with the browser, one uses the Browser Object Model (BOM).
 
 Since window is the browser's default object, you can call all of its functions either directly or by supplying window. For example:
+
 ```js
 window.alert("hello javatpoint"); 
 ```
 is same as:
+
 ```js
 alert("hello javatpoint");  
 ```
 We can use JavaScript's WebAPIs and Interfaces (object types) for creating online applications or websites. These objects and APIs enable us to manage the lifecycle of a webpage and carry out a number of tasks, such as changing screen size, opening and shutting new browser windows, updating URLs, retrieving cookies, and local storage, among other things.
+
 Browser objects are the interfaces (object types) that enable us to interact with the browser window. The word "browser object" isn't official, but it refers to a collection of objects that are members of multiple WebAPIs and are used to manage a variety of browser-related data and operations.
 
 For instance, when a browser opens an HTML document, the browser interprets it as a collection of hierarchical objects (HTML tags) and displays the data contained in these objects as a result (HTML page rendering). The document is parsed by the browser, which then generates a group of objects that define the content and its specifics. The image below shows the numerous objects that can be used to access different parts of the browser window:
@@ -91,7 +94,7 @@ location.reload();
 
 **SYNTAX**
 
-``js
+```js
 var e = window.history
 ```
 **EXAMPLE**
