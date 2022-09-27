@@ -731,4 +731,12 @@ Your job is to give the first child a blue background, the last child a paleviol
 ![](./image/ex-2.png)	
 	
 <hr>
+
+
+3. create an image slider using JavaScript
+
+ An Image Slider that comprises several images displayed on a web application is called “Slide Show” and “Carousels”. It permits you to show multiple images, videos,     or graphics on a web application. Also, adding an Image Slider to a website can fascinate the users and capture their attention.
+		
+![](./image/image-slider.gif)	
 	
+<hr>
