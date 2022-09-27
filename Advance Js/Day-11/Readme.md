@@ -1,6 +1,6 @@
 - [Day 11](#day-11)
-	- [Browser Object Model](#Browser_Object_Model)
-	- [BOM Examples](#BOM_Example)
+	- [Browser Object Model](#browser-object-model)
+	- [BOM Examples](#the-important-bom-objects-are-as)
 	 - [Document](#document)
 	 - [Location](#location)
 	 - [history](#history)
@@ -10,6 +10,7 @@
 # Day 11
 
 ## Browser Object Model
+
 In order to communicate with the browser, one uses the Browser Object Model (BOM).
 
 Since window is the browser's default object, you can call all of its functions either directly or by supplying window. For example:
@@ -38,12 +39,16 @@ Since Window is the browser's default object, you can call its functions directl
 
 ## The important BOM objects are as:
 
-**document** - The HTML file that the browser has loaded is represented by this object. An object called a document object gives users access to all of a document's HTML elements (webpage). We can alter any existing HTML tag, add a new HTML tag to the webpage, etc. with this object.
+## **document**
+
+- The HTML file that the browser has loaded is represented by this object. An object called a document object gives users access to all of a document's HTML elements (webpage). We can alter any existing HTML tag, add a new HTML tag to the webpage, etc. with this object.
 we have already seen this.
 
 <hr>
 
-**location** - Location is a built-in object which represent the location of the object to which it is linked, which can be Window or Document. Both the Document and Window interface have a linked location property.
+## **location** 
+
+- Location is a built-in object which represent the location of the object to which it is linked, which can be Window or Document. Both the Document and Window interface have a linked location property.
 
 - location.href returns the URL of the web page currently loaded in the browser window.
 
@@ -90,7 +95,9 @@ location.reload();
 
 <hr>
 
-**history** - It stores Uniform Resource Locator(URLs) visited by a user in the browser. It is a built-in object which is used to get browser history. This object is a property of the JavaScript Window object.
+## **history** 
+
+- It stores Uniform Resource Locator(URLs) visited by a user in the browser. It is a built-in object which is used to get browser history. This object is a property of the JavaScript Window object.
 
 **SYNTAX**
 
@@ -135,7 +142,9 @@ var e = window.history
 
 <hr>
 
-**navigator** - It acts as a storehouse of all the data and information about the Browser software used to access the webpage and this object is used to fetch information related to the browser for example, whether the user is using Chrome browser or Safari browser, which version of browser is being used etc.
+## **navigator** 
+
+- It acts as a storehouse of all the data and information about the Browser software used to access the webpage and this object is used to fetch information related to the browser for example, whether the user is using Chrome browser or Safari browser, which version of browser is being used etc.
 
 **SYNTAX**
 
@@ -182,7 +191,9 @@ var nav = window.navigator;
 
 <hr>
 
-**screen** - It is a built-in object which is used to fetch information related to the browser screen, like the screen size, etc. It is also obtained from the Window object.
+## **screen** 
+
+- It is a built-in object which is used to fetch information related to the browser screen, like the screen size, etc. It is also obtained from the Window object.
 
 Properties:
 
