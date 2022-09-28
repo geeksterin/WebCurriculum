@@ -1,13 +1,13 @@
 # cryptoview-project
 
-![](./image/crypto-1.jpg)
+![](./image/crypto-1.png)
 
  <hr>
  
-![](./image/crypto-2.jpg)
+![](./image/crypto-2.png)
  
   <hr>
   
-![](./image/crypto-3.jpg)
+![](./image/crypto-3.png)
 
  <hr>
