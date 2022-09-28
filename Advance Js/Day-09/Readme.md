@@ -1,4 +1,4 @@
-# Create To-do List using Vanilla JavaScript
+# Create LeaderBoard using Vanilla JavaScript
 
 <hr>
 
@@ -6,7 +6,7 @@ Good day, geeks!👋
 
 If you completed the prior little project, congratulations! You are doing fantastically.
 
-You are becoming better every day, so let's explore how to make a to-do list. Its a simple project to make your concepts strong.
+You are becoming better every day, so let's explore how to make a Leaderboard. Its a simple project to make your concepts strong.
 After making this project What you'll Learn :-
 
  - DOM Manipulation
@@ -18,12 +18,7 @@ After making this project What you'll Learn :-
 
 <hr>
 
-## what is to-do list
-
-The lists we typically use to keep track of our daily chores—or a list of everything we need to do—have the most crucial things at the top and the least crucial tasks at the bottom. 
-We can use it to plan our everyday schedules. We are always free to add new assignments and remove ones that have been completed. 
-
-A TODO list can be used to complete the following four main tasks:
+you have to implement the following four main tasks:
 
 - Add tasks
 - Update tasks
@@ -32,9 +27,9 @@ A TODO list can be used to complete the following four main tasks:
 
 <hr>
 
-1. Create To-do List using Vanilla JavaScript
+1. Create Leaderboard List using Vanilla JavaScript
 
 
-![](./images/to-do-list.gif)
+![](./images/dom_mini_project_leaderboard_day_8.1.gif)
 
 <hr>
