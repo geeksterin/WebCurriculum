@@ -10,6 +10,8 @@ Get details of users by typing their name on searchbox.
 
 API- https://api.github.com
 
+feel free to explore this API refer this documentation [Click me👆](https://docs.github.com/en/developers/overview/about-githubs-apis)
+
 ![](./image/github_finder.png)
 
 <hr>
@@ -19,6 +21,8 @@ API- https://api.github.com
 You have to build a web application that allows users to look up a word's definition using the Merriam-Webster API. It retrieves both the word's pronunciation and its definition.
 
 API -https://www.dictionaryapi.com/api/v3/references/learners/json/apple?key=your-api-key (genrate your own api key)
+
+feel free to explore this API refer this documentation [Click me👆](https://www.dictionaryapi.com/products/api-learners-dictionary)
 
 ![](./image/dictionary.png)
 
@@ -30,6 +34,8 @@ You need to use Vanilla Javascript and the MealDB API to construct an online rec
 
 API- https://www.themealdb.com/api/json/v1/1/search.php?s=sandwiches
 
+feel free to explore this API refer this documentation [Click me👆](https://www.themealdb.com/api.php)
+
 ![](./image/meal-finder.png)
 
 <hr>
@@ -38,7 +44,10 @@ API- https://www.themealdb.com/api/json/v1/1/search.php?s=sandwiches
 
 For getting meteorological information, you can use the Dark Sky API, it is a terrific opportunity for you to learn how to communicate with APIs, which is another great thing you can do with JavaScript. 
 
-API - https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key}
+API - https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API-key}
+
+feel free to explore this API refer this documentation [Click me👆](https://openweathermap.org/api/one-call-3)
+
 ![](./image/weather.jpg)
 
 ## 5. Random Quote Generator Using HTML, CSS, and JavaScript
@@ -48,7 +57,9 @@ fetch the data from API and then display the quotes in card format.
 API- https://api.quotable.io/random 
 
 -https://type.fit/api/quotes
-    
+  
+ feel free to explore this API refer this documentation [Click me👆](https://github.com/lukePeavey/quotable)
+ 
 ![](./image/quote.png)
 
 <hr>
