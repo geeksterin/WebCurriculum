@@ -145,21 +145,44 @@ ParentNode.append( ChildNodesToPrepend);
 **EXAMPLE**
 
 ```html
-       <!DOCTYPE html>
-       <html lang="en">
-       
-       <body>
-        <h1>Geekster✈️</h1>
-       
-        <script>
-         var parent = document.createElement("div");
-         parent.innerHTML = "Geekster - ";
-         parent.append(" Best Online Platform to Learn Programming");
-         console.log(parent.textContent);
-        </script>
-       </body>
-       
-       </html>
+      <!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" 
+          content="ie=edge">
+    <title>
+      Document
+  </title>
+</head>
+  
+<body>
+    <ul>
+        <li>Get Up Geeks😎</li>
+        <li>Do some coding👩‍💻</li>
+        <li>code Daily</li>
+        <li>eat sleep code repeat</li>
+    </ul>
+    <input id="btn" 
+           type="button"
+           value="Remove Childrens">
+</body>
+<script>
+    function deleteChild() {
+        var e = document.querySelector("ul");
+        e.innerHTML = "";
+    }
+    var btn = document.getElementById(
+      "btn").onclick = function() {
+        deleteChild();
+    }
+</script>
+  
+</html>
        
 ```
 **OUTPUT**
