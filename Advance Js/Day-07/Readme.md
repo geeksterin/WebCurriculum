@@ -13,7 +13,7 @@ So go ahead and attempt this thing.
 
 <hr> 
 
-## Day 06
+## Day 07
 
 ## Exercises
 
