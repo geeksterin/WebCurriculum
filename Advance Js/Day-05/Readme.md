@@ -11,7 +11,11 @@
     - [D3.js](#d3.js)
     - [Chart.js](#chart.js)
     - [Underscore.js](#underscore.js)
-    - [Lodash](#lodash)     
+    - [Lodash](#lodash)  
+    - [ Few awsome javascript libraries](#few-awsome-javascript-libraries-that-you-can-try-out-by-yourself)  
+    - [Chart.js](#chart.js)
+    - [Underscore.js](#underscore.js)
+    - [Lodash](#lodash)   
  <hr>
  
 ## JSON  
@@ -279,4 +283,50 @@ Read the JavaScript library’s documentation you intend to use for more informa
   
   <hr>
   
-  
+# Few awsome javascript libraries that you can try out by yourself.
+	
+## 1. fullPage.js
+
+FullPage.js, an open-source JS toolkit, makes it simple to build one-page or full-screen scrolling webpages. In addition to adding a landscape slider inside your site sections, it is easy to use.
+
+  ## Key points
+
+- Offers a wide range of customization and configuration options.
+- Supports JavaScript frameworks like react-fullpage, angular-fullpage, and vue-fullpage.
+- Enables both vertical and horizontal scrolling.
+- Responsive design that fits the screens of different sizes as well as multiple browsers.
+- Auto-scrolling on page loads.
+- Video/image lazy load.
+	
+Click here to learn more about the library [Click me👆](https://alvarotrigo.com/react-fullpage/#page1)
+	
+![](./images/fullpage.gif)
+
+ <hr>
+
+## 2. Particle.js
+
+A lot of tiny particles moving around and interacting with each other—or with you—have a certain appeal to them. If you are ever in a situation where you need to work with a lot of particles, Particles.js will serve you well. As is evident from the name, it is a JavaScript library that can help you create particle systems.
+	
+ ## Key points
+	
+- it is lightweight, easy to use, and gives you a lot of control. 
+
+Click here to learn more about the library [Click me👆](https://github.com/VincentGarreau/particles.js/)
+	
+![](./images/particle.gif)
+
+<hr>
+	
+## 3. simpleParallax.js 
+
+simpleParallax.js is a very simple and tiny Vanilla JS library that adds parallax animations on any images.
+
+
+Click here to learn more about the library [Click me👆](https://simpleparallax.com/)
+	
+![](./images/parallax.gif)
+	
+<hr>
+
+	
