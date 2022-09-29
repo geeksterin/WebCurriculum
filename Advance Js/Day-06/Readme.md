@@ -1,6 +1,6 @@
 # Mini Project: World Countries Data Visualization
 
-### Day 05
+### Day 06
 
 <hr>
 
