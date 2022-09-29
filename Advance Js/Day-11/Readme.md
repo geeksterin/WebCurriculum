@@ -151,43 +151,59 @@ var e = window.history
 ```js
 var nav = window.navigator;
 ```
+1	appName	- returns the name
+
+2	appVersion -	returns the version
+
+3	appCodeName - 	returns the code name
+
+4	cookieEnabled -	returns true if cookie is enabled otherwise false
+
+5	userAgent -	returns the user agent
+
+6	language -	returns the language. It is supported in Netscape and Firefox only.
+
+7	userLanguage -	returns the user language. It is supported in IE only.
+
+8	plugins	returns - the plugins. It is supported in Netscape and Firefox only.
+
+9	systemLanguage - returns the system language. It is supported in IE only.
+
+10	mimeTypes[] - returns the array of mime type. It is supported in Netscape and Firefox only.
+
+11	platform - returns the platform e.g. Win32.
+
+12	online - returns true if browser is online otherwise false.
 
 **EXAMPLE**
 
 ```html
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
-
-<p>Displaying location using Latitude and Longitude</p>
-
-<button class="geeks" onclick="getlocation()">
-	Click Me
-</button>
-<p id="demo1"></p>
-
-<script>
-	var variable1 = document.getElementById("demo1");
-	function getlocation() {
-	navigator.geolocation.getCurrentPosition(showLoc);
-	}
-	function showLoc(pos) {
-	variable1.innerHTML =
-		"Latitude: " +
-		pos.coords.latitude +
-		"<br>Longitude: " +
-		pos.coords.longitude;
-	}
-</script>
+    <script>  
+        document.writeln("<br/>navigator.appCodeName: "+navigator.appCodeName);  
+        document.writeln("<br/>navigator.appName: "+navigator.appName);  
+        document.writeln("<br/>navigator.appVersion: "+navigator.appVersion);  
+        document.writeln("<br/>navigator.cookieEnabled: "+navigator.cookieEnabled);  
+        document.writeln("<br/>navigator.language: "+navigator.language);  
+        document.writeln("<br/>navigator.userAgent: "+navigator.userAgent);  
+        document.writeln("<br/>navigator.platform: "+navigator.platform);  
+        document.writeln("<br/>navigator.onLine: "+navigator.onLine);  
+        </script>  
 </body>
-
 </html>
 ```
 
 **OUTPUT**
 
-![](./img/ll.png)
+![](./img/navigator.png)
 
 <hr>
 
