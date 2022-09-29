@@ -577,7 +577,7 @@ After pressing the button
 
 <hr>
 
-# Adding Text to HTML element
+# Adding Style Color
 
 The DOM style color property is used to set or return the color of the text. It is used to set the color property.
 
@@ -659,7 +659,7 @@ before clicking button
 
 After clicking button
 	
-![](./image/afterbgcolorchange.png)
+![](./image/bgc.png)
 
 <hr>
 
