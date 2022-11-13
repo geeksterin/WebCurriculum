@@ -11,6 +11,7 @@
 - [Promises](#Promises)
 - [Introduction: Fetch](#Introduction-Fetch)
 - [Async & Await](#Async-&-Await)
+- [Exercises](#exercises)
 
 <hr>
 
@@ -390,6 +391,133 @@ Hello Geeks
 ```
 
 <hr>
+
+## Exercises
+
+### Exercises: Level 1
+
+```js
+const constants = [2.72, 3.14, 9.81, 37, 100]
+const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
+const rectangle = {
+  width: 20,
+  height: 10,
+  area: 200,
+  perimeter: 60
+}
+const users = [
+{
+  name:'Brook',
+  scores:75,
+  skills:['HTM', 'CSS', 'JS'],
+  age:16
+},
+{
+  name:'Alex',
+  scores:80,
+  skills:['HTM', 'CSS', 'JS'],
+  age:18
+},
+{
+  name:'David',
+  scores:75,
+  skills:['HTM', 'CSS'],
+  age:22
+},
+{
+  name:'John',
+  scores:85,
+  skills:['HTML'],
+  age:25
+},
+{
+  name:'Sara',
+  scores:95,
+  skills:['HTM', 'CSS', 'JS'],
+  age: 26
+},
+{
+  name:'Martha',
+  scores:80,
+  skills:['HTM', 'CSS', 'JS'],
+  age:18
+},
+{
+  name:'Thomas',
+  scores:90,
+  skills:['HTM', 'CSS', 'JS'],
+  age:20
+}
+]
+```
+
+1. Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
+2. Destructure and assign the elements of countries array to fin, est, sw, den, nor
+3. Destructure the rectangle object by its properties or keys.
+
+### Exercises: Level 2
+
+1. Iterate through the users array and get all the keys of the object using destructuring
+2. Find the persons who have less than two skills
+
+### Exercises: Level 3
+
+1. Destructure the countries object print name, capital, population and languages of all countries
+2. A junior developer structure student name, skills and score in array of arrays which may not easy to read. Destructure the following array name to name, skills array to skills, scores array to scores, JavaScript score to jsScore and React score to reactScore variable in one line.
+
+  ```js
+    const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+    console.log(name, skills, jsScore, reactScore)
+  ```
+
+  ```sh
+  David (4) ["HTM", "CSS", "JS", "React"] 90 95
+  ```
+
+3. Write a function called *convertArrayToObject* which can convert the array to a structure object.
+
+  ```js
+      const students = [
+          ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+          ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+        ]
+
+      console.log(convertArrayToObject(students))
+      [
+        {
+          name: 'David',
+          skills: ['HTM','CSS','JS','React'],
+          scores: [98,85,90,95]
+        },
+        {
+          name: 'John',
+          skills: ['HTM','CSS','JS','React'],
+          scores: [85, 80,85,80]
+        }
+      ]
+
+### Exercises: Level 4 (promises)
+
+ ```js
+const countriesAPI = 'https://restcountries.com/v2/all'
+const catsAPI = 'https://api.thecatapi.com/v1/breeds'
+```
+
+### Exercises: Level 1
+
+1. Read the countries API using fetch and print the name of country, capital, languages, population and area.
+
+### Exercises: Level 2
+
+1. Print out all the cat names in to catNames variable.
+
+### Exercises: Level 3
+
+1. Read the cats api and find the average weight of cat in metric unit.
+2. Read the countries api and find out the 10 largest countries
+3. Read the countries api and count total number of languages in the world used as officials.
+
+
 
 
 
