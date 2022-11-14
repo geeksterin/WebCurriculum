@@ -1,6 +1,6 @@
 #  Object Oriented Programming concepts and their use in JavaScript.
 
-### Exercise 1
+# Exercise 1
 
 ```js
 //Defining object
@@ -26,7 +26,7 @@ Create a method inside object to get the user's first
 <br>
 <br>
 
-### Exercise 2
+#Exercise 2
 
 ```js
 const details = {
