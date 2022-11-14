@@ -71,7 +71,8 @@ him.initialize("Adam", 45);
 him.teach("Inheritance");
 ```
 ```
-Create an object called Teacher derived from the Person class, and implement a method called teach which receives a string called subject, and prints out:
-<h4>[teacher's name] is now teaching [subject] </h4>
+Create an object called Teacher derived from the Person class, and implement a method 
+called teach which receives a string called subject, and prints out:
 ```
+<h4>[teacher's name] is now teaching [subject] </h4>
 
