@@ -1,4 +1,4 @@
-# Learn ES6 concepts with Geekster
+# Learn local storage concepts with Geekster
 - [HTML5 Web Storage](#html5-web-storage)
 		- [sessionStorage](#sessionstorage)
 		- [localStorage](#localstorage)
