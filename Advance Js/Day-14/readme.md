@@ -75,3 +75,21 @@ him.teach("Inheritance");
 called teach which receives a string called subject, and prints out:
 	[teacher's name] is now teaching [subject] </h4>
 
+<br>
+<hr>
+
+# Exercise 4
+
+```js
+const obj = {
+  firstName: "John",
+  lastName: "Doe",
+  // create a getter fullName to return John Doe
+};
+
+console.log(obj.fullName);
+```
+
+<h4>Create a getter ```fullName``` to return Full name (John Doe) in console. </h4>
+
+
