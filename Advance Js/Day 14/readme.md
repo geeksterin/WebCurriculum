@@ -23,7 +23,10 @@ Create a method inside object to get the user's first
  and last name console it using the object literal.
 </h2>
 
-### Exercise 1
+<br>
+<br>
+
+### Exercise 2
 
 ```js
 const details = {
