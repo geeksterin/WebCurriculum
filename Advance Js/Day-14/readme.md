@@ -1,4 +1,5 @@
 #  Object Oriented Programming concepts and their use in JavaScript.
+<hr>
 
 # Exercise 1
 
@@ -23,8 +24,9 @@ Create a method inside object to get the user's first
  and last name console it using the object literal.
 </h4>
 
+
 <br>
-<br>
+<hr>
 
 # Exercise 2
 
