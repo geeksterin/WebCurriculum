@@ -18,15 +18,15 @@ let person = {
 }
 
 ```
-<h2>
+<h4>
 Create a method inside object to get the user's first
  and last name console it using the object literal.
-</h2>
+</h4>
 
 <br>
 <br>
 
-#Exercise 2
+# Exercise 2
 
 ```js
 const details = {
@@ -42,7 +42,10 @@ const details = {
 
 obj.learningCreate();
  ```
- <h2>
+ <h4>
 	Create an object 'obj' with function() 'check' to get output as given:
 My name is Robert and I am learning JS.
-</h2>
+</h4>
+
+<br>
+<hr>
