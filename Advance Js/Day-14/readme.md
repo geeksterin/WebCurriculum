@@ -20,7 +20,8 @@
 <p>A prototype-based language has the notion of a prototypical object, an object used as a template from which to get the initial properties for a new object.</p>
 </blockquote>
 <p>Take a look at this code:</p>
-<pre><code class="language-javascript">let names = {
+```js
+let names = {
     fname: "Dillion",
     lname: "Megida"
 }
@@ -29,7 +30,7 @@ console.log(names.hasOwnProperty("mname"));
 // Expected Output
 // Dillion
 // false
-</code></pre>
+```
 <p>The object variable <code>names</code> has only two properties -  <code>fname</code> and <code>lname</code> . No methods at all.</p>
 <p>So where does <code>hasOwnProperty</code> come from?</p>
 <p>Well, it comes from the <code>Object</code> prototype.</p>
@@ -47,7 +48,8 @@ console.log(names.hasOwnProperty("mname"));
 <h3 id="modifyingthe__proto__property">Modifying the <code>__proto__</code> property</h3>
 <p>This property can be modified by explicitly stating that it should refer to another prototype. The following methods are used to achieve this:</p>
 <h3 id="objectcreate"><code>Object.create()</code></h3>
-<pre><code class="language-javascript">function DogObject(name, age) {
+```js
+function DogObject(name, age) {
     let dog = Object.create(constructorObject);
     dog.name = name;
     dog.age = age;
@@ -59,13 +61,17 @@ let constructorObject = {
     }
 }
 let bingo = DogObject("Bingo", 54);
-console.log(bingo);
-</code></pre>
+console.log(bingo);				
+```				
+
+
 <p>In the console, this is what you'd have:</p>
 <!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://www.freecodecamp.org/news/content/images/2020/02/3-1.png" class="kg-image" alt="3-1" width="600" height="400" loading="lazy"><figcaption>console.log(bingo)</figcaption></figure><!--kg-card-begin: markdown--><p>Notice the <code>__proto__</code> property and the <code>speak</code> method?</p>
 <p><code>Object.create</code> uses the argument passed to it to become the prototype.</p>
 <h3 id="newkeyword"><code>new</code> keyword</h3>
-<pre><code class="language-javascript">function DogObject(name, age) {
+```js
+				
+function DogObject(name, age) {
     this.name = name;
     this.age = age;
 }
@@ -73,7 +79,7 @@ DogObject.prototype.speak = function() {
     return "I am a dog";
 }
 let john = new DogObject("John", 45);
-</code></pre>
+```
 <p><code>john</code>'s <code>__proto__</code> property is directed to <code>DogObject</code>'s prototype. But remember, <code>DogObject</code>'s prototype is an object (<strong>key and value pair</strong>), hence it also has a <code>__proto__</code> property which refers to the global <code>Object</code> protoype.</p>
 <p>This technique is referred to as <strong>PROTOTYPE CHAINING</strong>.</p>
 <p><strong>Note that:</strong> the <code>new</code> keyword approach does the same thing as <code>Object.create()</code> but only makes it easier as it does some things automatically for you.</p>
