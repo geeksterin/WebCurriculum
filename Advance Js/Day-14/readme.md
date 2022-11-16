@@ -1,6 +1,192 @@
 #  Object Oriented Programming concepts and their use in JavaScript.
 <hr>
 
+<h4>JavaScript is not a class-based object-oriented language. But it still has ways of using object oriented programming (OOP).</h4>
+
+t/images/2020/02/1-1.png" class="kg-image" alt="1-1" width="600" height="400" loading="lazy"><figcaption>console.log(names)</figcaption></figure><!--kg-card-begin: markdown--><p>Notice the last property - <code>__proto__</code>? Try expanding it:</p>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://www.freecodecamp.org/news/content/images/2020/02/2-1.png" class="kg-image" alt="2-1" width="600" height="400" loading="lazy"><figcaption>The __proto__ property of names</figcaption></figure><!--kg-card-begin: markdown--><p>You'll see a set of properties under the  <code>Object</code> constructor. All these properties are coming from the global <code>Object</code> prototype. If you look closely, you'll also notice our hidden <code>hasOwnProperty</code> .</p>
+<p>In other words, all objects have access to the <code>Object</code>'s prototype. They do not possess these properties, but are granted access to the properties in the prototype.</p>
+<h2 id="the__proto__property">The <code>__proto__</code> property</h2>
+<p>This points to the object which is used as a prototype.</p>
+<p>This is the property on every object that gives it access to the <code>Object prototype</code> property.</p>
+<p>Every object has this property by default, which refers to the <code>Object Protoype</code> except when configured otherwise (that is, when the object's <code>__proto__</code> is pointed to another prototype).</p>
+<h3 id="modifyingthe__proto__property">Modifying the <code>__proto__</code> property</h3>
+<p>This property can be modified by explicitly stating that it should refer to another prototype. The following methods are used to achieve this:</p>
+<h3 id="objectcreate"><code>Object.create()</code></h3>
+<pre><code class="language-javascript">function DogObject(name, age) {
+    let dog = Object.create(constructorObject);
+    dog.name = name;
+    dog.age = age;
+    return dog;
+}
+let constructorObject = {
+    speak: function(){
+        return "I am a dog"
+    }
+}
+let bingo = DogObject("Bingo", 54);
+console.log(bingo);
+</code></pre>
+<p>In the console, this is what you'd have:</p>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://www.freecodecamp.org/news/content/images/2020/02/3-1.png" class="kg-image" alt="3-1" width="600" height="400" loading="lazy"><figcaption>console.log(bingo)</figcaption></figure><!--kg-card-begin: markdown--><p>Notice the <code>__proto__</code> property and the <code>speak</code> method?</p>
+<p><code>Object.create</code> uses the argument passed to it to become the prototype.</p>
+<h3 id="newkeyword"><code>new</code> keyword</h3>
+<pre><code class="language-javascript">function DogObject(name, age) {
+    this.name = name;
+    this.age = age;
+}
+DogObject.prototype.speak = function() {
+    return "I am a dog";
+}
+let john = new DogObject("John", 45);
+</code></pre>
+<p><code>john</code>'s <code>__proto__</code> property is directed to <code>DogObject</code>'s prototype. But remember, <code>DogObject</code>'s prototype is an object (<strong>key and value pair</strong>), hence it also has a <code>__proto__</code> property which refers to the global <code>Object</code> protoype.</p>
+<p>This technique is referred to as <strong>PROTOTYPE CHAINING</strong>.</p>
+<p><strong>Note that:</strong> the <code>new</code> keyword approach does the same thing as <code>Object.create()</code> but only makes it easier as it does some things automatically for you.</p>
+<h3 id="andso">And so...</h3>
+<p>Every object in Javascript has access to the <code>Object</code>'s prototype by default. If configured to use another prototype, say <code>prototype2</code>, then <code>prototype2</code> would also have access to the Object's prototype by default, and so on.</p>
+<h3 id="objectfunctioncombination">Object + Function Combination</h3>
+<p>You are probably confused by the fact that <code>DogObject</code> is a function (<code>function DogObject(){}</code>) and it has properties accessed with a <strong>dot notation</strong>. This is referred to as a <strong>function object combination</strong>.</p>
+<p>When functions are declared, by default they are given a lot of properties attached to it. Remember that functions are also objects in JavaScript data types.</p>
+<h2 id="nowclass">Now, Class</h2>
+<p>JavaScript introduced the <code>class</code> keyword in ECMAScript 2015. It makes JavaScript seem like an OOP language. But it is just syntatic sugar over the existing prototyping technique. It continues its prototyping in the background but makes the outer body look like OOP. We'll now look at how that's possible.</p>
+<p>The following example is a general usage of a <code>class</code> in JavaScript:</p>
+<pre><code class="language-javascript">class Animals {
+    constructor(name, specie) {
+        this.name = name;
+        this.specie = specie;
+    }
+    sing() {
+        return `${this.name} can sing`;
+    }
+    dance() {
+        return `${this.name} can dance`;
+    }
+}
+let bingo = new Animals("Bingo", "Hairy");
+console.log(bingo);
+</code></pre>
+<p>This is the result in the console:</p>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://www.freecodecamp.org/news/content/images/2020/02/5-1.png" class="kg-image" alt="5-1" width="600" height="400" loading="lazy"><figcaption>console.log(bingo)</figcaption></figure><!--kg-card-begin: markdown--><p>The <code>__proto__</code> references the <code>Animals</code> prototype (which in turn references the <code>Object</code> prototype).</p>
+<p>From this, we can see that the constructor defines the major features while everything outside the constructor (<code>sing()</code> and <code>dance()</code>) are the bonus features (<strong>prototypes</strong>).</p>
+<p>In the background, using the <code>new</code> keyword approach, the above translates to:</p>
+<pre><code class="language-javascript">function Animals(name, specie) {
+    this.name = name;
+    this.specie = specie;
+}
+Animals.prototype.sing = function(){
+    return `${this.name} can sing`;
+}
+Animals.prototype.dance = function() {
+    return `${this.name} can dance`;
+}
+let Bingo = new Animals("Bingo", "Hairy");
+</code></pre>
+<h2 id="subclassing">Subclassing</h2>
+<p>This is a feature in OOP where a class inherits features from a parent class but possesses extra features which the parent doesn't.</p>
+<p>The idea here is, for example, say you want to create a <em>cats</em> class. Instead of creating the class from scratch - stating the <em>name</em>, <em>age</em> and <em>species</em> property afresh, you'd inherit those properties from the parent <em>animals</em> class.</p>
+<p>This <em>cats</em> class can then have extra properties like <em>color of whiskers</em>.</p>
+<p>Let's see how subclasses are done with <code>class</code>.</p>
+<p>Here, we need a parent which the subclass inherits from. Examine the following code:</p>
+<pre><code class="language-js">class Animals {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    sing() {
+        return `${this.name} can sing`;
+    }
+    dance() {
+        return `${this.name} can dance`;
+    }
+} 
+class Cats extends Animals {
+    constructor(name, age, whiskerColor) {
+        super(name, age);
+        this.whiskerColor = whiskerColor;
+    }
+    whiskers() {
+        return `I have ${this.whiskerColor} whiskers`;
+    }
+}
+let clara = new Cats("Clara", 33, "indigo");
+</code></pre>
+<p>With the above, we get the following outputs:</p>
+<pre><code class="language-js">console.log(clara.sing());
+console.log(clara.whiskers());
+// Expected Output
+// "Clara can sing"
+// "I have indigo whiskers"
+</code></pre>
+<p>When you log the contents of clara out in the console, we have:</p>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://www.freecodecamp.org/news/content/images/2020/02/6-1.png" class="kg-image" alt="6-1" width="600" height="400" loading="lazy"><figcaption>console.log(clara)</figcaption></figure><!--kg-card-begin: markdown--><p>You'll notice that <code>clara</code> has a <code>__proto__</code> property which references the constructor <code>Cats</code> and gets access to the <code>whiskers()</code> method. This <code>__proto__</code> property also has a <code>__proto__</code> property which references the constructor <code>Animals</code> thereby getting access to <code>sing()</code> and <code>dance()</code>. <code>name</code> and <code>age</code> are properties that exist on every object created from this.</p>
+<p>Using the <code>Object.create</code> method approach, the above translates to:</p>
+<pre><code class="language-js">function Animals(name, age) {
+    let newAnimal = Object.create(animalConstructor);
+    newAnimal.name = name;
+    newAnimal.age = age;
+    return newAnimal;
+}
+let animalConstructor = {
+    sing: function() {
+        return `${this.name} can sing`;
+    },
+    dance: function() {
+        return `${this.name} can dance`;
+    }
+}
+function Cats(name, age, whiskerColor) {
+    let newCat = Animals(name, age);
+    Object.setPrototypeOf(newCat, catConstructor);
+    newCat.whiskerColor = whiskerColor;
+    return newCat;
+}
+let catConstructor = {
+    whiskers() {
+        return `I have ${this.whiskerColor} whiskers`;
+    }
+}
+Object.setPrototypeOf(catConstructor, animalConstructor);
+const clara = Cats("Clara", 33, "purple");
+clara.sing();
+clara.whiskers();
+// Expected Output
+// "Clara can sing"
+// "I have purple whiskers"
+</code></pre>
+<p><code>Object.setPrototypeOf</code> is a method which takes in two arguments - the object (first argument) and the desired prototype (second argument).</p>
+<p>From the above, the <code>Animals</code> function returns an object with the <code>animalConstructor</code> as prototype. The <code>Cats</code> function returns an object with <code>catConstructor</code> as it's prototype. <code>catConstructor</code> on the other hand, is given a prototype of <code>animalConstructor</code>.</p>
+<p>Therefore, ordinary animals only have access to the <code>animalConstructor</code> but cats have access to the <code>catConstructor</code> and the <code>animalConstructor</code>.</p>
+<h2 id="wrappingup">Wrapping Up</h2>
+<p>JavaScript leverages its prototype nature to welcome OOP developers to its ecosystem. It also provides easy ways to creating prototypes and organize related data.</p>
+<p>True OOP languages do not perform prototyping in the background - just take note of that.</p>
+<p>A big thanks to <a href="https://frontendmasters.com/teachers/will-sentance/">Will Sentance</a>'s course on Frontend Masters - <a href="https://frontendmasters.com/courses/object-oriented-js/">JavaScript: The Hard Parts of Object Oriented JavaScript</a>. I learned everything you see in this article (plus a little extra research) from his course. You should check it out.</p>
+<p>You can hit me up on Twitter at <a href="https://twitter.com/iamdillion">iamdillion</a> for any questions or contributions.</p>
+<p>Thanks for reading : )</p>
+<h3 id="usefulresources">Useful Resources</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS">Object-oriented JavaScript for beginners</a></li>
+<li><a href="https://www.geeksforgeeks.org/introduction-object-oriented-programming-javascript/">Introduction to Object Oriented Programming in JavaScript</a></li>
+</ul>
+
+
+                        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<hr>
 # Exercise 1
 
 ```js
