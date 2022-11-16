@@ -3,7 +3,41 @@
 
 <h4>JavaScript is not a class-based object-oriented language. But it still has ways of using object oriented programming (OOP).</h4>
 
-t/images/2020/02/1-1.png" class="kg-image" alt="1-1" width="600" height="400" loading="lazy"><figcaption>console.log(names)</figcaption></figure><!--kg-card-begin: markdown--><p>Notice the last property - <code>__proto__</code>? Try expanding it:</p>
+ <section class="post-full-content" style="font-size:large;font-family: Lucida Console;">
+                    <div class="post-and-sidebar">
+                        <section class="post-content ">
+                            
+<p>JavaScript is not a class-based object-oriented language. But it still has ways of using object oriented programming (OOP).</p>
+<p>In this tutorial, I'll explain OOP and show you how to use it.</p>
+<p>According to <span href="#">Wikipedia</span>, class-based programming is</p>
+<blockquote>
+<p>a style of Object-oriented programming (OOP) in which inheritance occurs via defining classes of objects, instead of inheritance occurring via the objects alone</p>
+</blockquote>
+<p>The most popular model of OOP is class-based.</p>
+<p>But as I mentioned, JavaScript isn't a classed-based langauge – it's is a prototype-based langauge.</p>
+<p>According to Mozilla's documentaion:</p>
+<blockquote>
+<p>A prototype-based language has the notion of a prototypical object, an object used as a template from which to get the initial properties for a new object.</p>
+</blockquote>
+<p>Take a look at this code:</p>
+<pre><code class="language-javascript">let names = {
+    fname: "Dillion",
+    lname: "Megida"
+}
+console.log(names.fname);
+console.log(names.hasOwnProperty("mname"));
+// Expected Output
+// Dillion
+// false
+</code></pre>
+<p>The object variable <code>names</code> has only two properties -  <code>fname</code> and <code>lname</code> . No methods at all.</p>
+<p>So where does <code>hasOwnProperty</code> come from?</p>
+<p>Well, it comes from the <code>Object</code> prototype.</p>
+<p>Try logging the contents of the variable to the console:</p>
+<pre><code class="language-js">console.log(names);
+</code></pre>
+<p>When you expand the results in the console, you'll get this:</p>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://www.freecodecamp.org/news/content/images/2020/02/1-1.png" class="kg-image" alt="1-1" width="600" height="400" loading="lazy"><figcaption>console.log(names)</figcaption></figure><!--kg-card-begin: markdown--><p>Notice the last property - <code>__proto__</code>? Try expanding it:</p>
 <!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://www.freecodecamp.org/news/content/images/2020/02/2-1.png" class="kg-image" alt="2-1" width="600" height="400" loading="lazy"><figcaption>The __proto__ property of names</figcaption></figure><!--kg-card-begin: markdown--><p>You'll see a set of properties under the  <code>Object</code> constructor. All these properties are coming from the global <code>Object</code> prototype. If you look closely, you'll also notice our hidden <code>hasOwnProperty</code> .</p>
 <p>In other words, all objects have access to the <code>Object</code>'s prototype. They do not possess these properties, but are granted access to the properties in the prototype.</p>
 <h2 id="the__proto__property">The <code>__proto__</code> property</h2>
@@ -157,7 +191,9 @@ clara.whiskers();
 <p><code>Object.setPrototypeOf</code> is a method which takes in two arguments - the object (first argument) and the desired prototype (second argument).</p>
 <p>From the above, the <code>Animals</code> function returns an object with the <code>animalConstructor</code> as prototype. The <code>Cats</code> function returns an object with <code>catConstructor</code> as it's prototype. <code>catConstructor</code> on the other hand, is given a prototype of <code>animalConstructor</code>.</p>
 <p>Therefore, ordinary animals only have access to the <code>animalConstructor</code> but cats have access to the <code>catConstructor</code> and the <code>animalConstructor</code>.</p>
-
+<h2 id="wrappingup">Wrapping Up</h2>
+<p>JavaScript leverages its prototype nature to welcome OOP developers to its ecosystem. It also provides easy ways to creating prototypes and organize related data.</p>
+<p>True OOP languages do not perform prototyping in the background - just take note of that.</p>
 
 
 
