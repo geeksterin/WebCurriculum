@@ -157,20 +157,7 @@ clara.whiskers();
 <p><code>Object.setPrototypeOf</code> is a method which takes in two arguments - the object (first argument) and the desired prototype (second argument).</p>
 <p>From the above, the <code>Animals</code> function returns an object with the <code>animalConstructor</code> as prototype. The <code>Cats</code> function returns an object with <code>catConstructor</code> as it's prototype. <code>catConstructor</code> on the other hand, is given a prototype of <code>animalConstructor</code>.</p>
 <p>Therefore, ordinary animals only have access to the <code>animalConstructor</code> but cats have access to the <code>catConstructor</code> and the <code>animalConstructor</code>.</p>
-<h2 id="wrappingup">Wrapping Up</h2>
-<p>JavaScript leverages its prototype nature to welcome OOP developers to its ecosystem. It also provides easy ways to creating prototypes and organize related data.</p>
-<p>True OOP languages do not perform prototyping in the background - just take note of that.</p>
-<p>A big thanks to <a href="https://frontendmasters.com/teachers/will-sentance/">Will Sentance</a>'s course on Frontend Masters - <a href="https://frontendmasters.com/courses/object-oriented-js/">JavaScript: The Hard Parts of Object Oriented JavaScript</a>. I learned everything you see in this article (plus a little extra research) from his course. You should check it out.</p>
-<p>You can hit me up on Twitter at <a href="https://twitter.com/iamdillion">iamdillion</a> for any questions or contributions.</p>
-<p>Thanks for reading : )</p>
-<h3 id="usefulresources">Useful Resources</h3>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS">Object-oriented JavaScript for beginners</a></li>
-<li><a href="https://www.geeksforgeeks.org/introduction-object-oriented-programming-javascript/">Introduction to Object Oriented Programming in JavaScript</a></li>
-</ul>
 
-
-                        </section>
 
 
 
