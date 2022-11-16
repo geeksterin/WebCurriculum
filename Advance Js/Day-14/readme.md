@@ -91,5 +91,39 @@ console.log(obj.fullName);
 ```
 
 <h4>Create a getter ```fullName``` to return Full name (John Doe) in console. </h4>
+<br>
+<hr>
+
+# Exercise 5
+
+```js
+var person = {
+    firstName : "John",
+    lastName : "Smith",
+    age : 23
+};
+
+function printFullName()
+{
+   //console Fullname (eg., Tony Stark)
+}
+
+function printDetails()
+{
+   // console Name and age (eg., Tony is 21 years old)
+}
+
+
+// Create boundcopies using bind()
+
+var boundPrintFullName;
+var boundPrintDetails;
+
+
+boundPrintFullName();
+boundPrintDetails();
+
+```
+<h4>Create the bound copies of printFullName and printDetails using bind() and return the Full name in printFullName() , person name and age in printDetails()</h4>
 
 
