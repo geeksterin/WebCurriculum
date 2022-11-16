@@ -1,8 +1,6 @@
 #  Object Oriented Programming concepts and their use in JavaScript.
 <hr>
 
-<h4>JavaScript is not a class-based object-oriented language. But it still has ways of using object oriented programming (OOP).</h4>
-
  <section class="post-full-content" style="font-size:large;font-family: Lucida Console;">
                     <div class="post-and-sidebar">
                         <section class="post-content ">
@@ -20,8 +18,7 @@
 <p>A prototype-based language has the notion of a prototypical object, an object used as a template from which to get the initial properties for a new object.</p>
 </blockquote>
 <p>Take a look at this code:</p>
-```js
-let names = {
+<pre><code class="language-javascript">let names = {
     fname: "Dillion",
     lname: "Megida"
 }
@@ -30,7 +27,7 @@ console.log(names.hasOwnProperty("mname"));
 // Expected Output
 // Dillion
 // false
-```
+</code></pre>
 <p>The object variable <code>names</code> has only two properties -  <code>fname</code> and <code>lname</code> . No methods at all.</p>
 <p>So where does <code>hasOwnProperty</code> come from?</p>
 <p>Well, it comes from the <code>Object</code> prototype.</p>
@@ -48,8 +45,7 @@ console.log(names.hasOwnProperty("mname"));
 <h3 id="modifyingthe__proto__property">Modifying the <code>__proto__</code> property</h3>
 <p>This property can be modified by explicitly stating that it should refer to another prototype. The following methods are used to achieve this:</p>
 <h3 id="objectcreate"><code>Object.create()</code></h3>
-```js
-function DogObject(name, age) {
+<pre><code class="language-javascript">function DogObject(name, age) {
     let dog = Object.create(constructorObject);
     dog.name = name;
     dog.age = age;
@@ -61,17 +57,13 @@ let constructorObject = {
     }
 }
 let bingo = DogObject("Bingo", 54);
-console.log(bingo);				
-```				
-
-
+console.log(bingo);
+</code></pre>
 <p>In the console, this is what you'd have:</p>
 <!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://www.freecodecamp.org/news/content/images/2020/02/3-1.png" class="kg-image" alt="3-1" width="600" height="400" loading="lazy"><figcaption>console.log(bingo)</figcaption></figure><!--kg-card-begin: markdown--><p>Notice the <code>__proto__</code> property and the <code>speak</code> method?</p>
 <p><code>Object.create</code> uses the argument passed to it to become the prototype.</p>
 <h3 id="newkeyword"><code>new</code> keyword</h3>
-```js
-				
-function DogObject(name, age) {
+<pre><code class="language-javascript">function DogObject(name, age) {
     this.name = name;
     this.age = age;
 }
@@ -79,7 +71,7 @@ DogObject.prototype.speak = function() {
     return "I am a dog";
 }
 let john = new DogObject("John", 45);
-```
+</code></pre>
 <p><code>john</code>'s <code>__proto__</code> property is directed to <code>DogObject</code>'s prototype. But remember, <code>DogObject</code>'s prototype is an object (<strong>key and value pair</strong>), hence it also has a <code>__proto__</code> property which refers to the global <code>Object</code> protoype.</p>
 <p>This technique is referred to as <strong>PROTOTYPE CHAINING</strong>.</p>
 <p><strong>Note that:</strong> the <code>new</code> keyword approach does the same thing as <code>Object.create()</code> but only makes it easier as it does some things automatically for you.</p>
@@ -200,9 +192,6 @@ clara.whiskers();
 <h2 id="wrappingup">Wrapping Up</h2>
 <p>JavaScript leverages its prototype nature to welcome OOP developers to its ecosystem. It also provides easy ways to creating prototypes and organize related data.</p>
 <p>True OOP languages do not perform prototyping in the background - just take note of that.</p>
-
-
-
 
 
 
